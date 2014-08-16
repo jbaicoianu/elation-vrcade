@@ -5,7 +5,7 @@ elation.require("engine.engine", function() {
       "parentname":"",
       "type":"terrain",
       "properties":{
-        "position":[0,0,0],
+        "position":[0,-4,0],
         "persist":true,
         "textures.map":"/media/space/textures/carpet-stars.jpg",
         "textures.mapRepeat":[100,100],
@@ -26,7 +26,7 @@ elation.require("engine.engine", function() {
         "galaxian":{
           "name":"galaxian",
           "parentname":"",
-          "type":"jsmesstest",
+          "type":"arcadecabinet",
           "properties":{
             "persist":true,
             "gamename":"galaxian", 
@@ -36,7 +36,7 @@ elation.require("engine.engine", function() {
         "pacman":{
           "name":"pacman",
           "parentname":"",
-          "type":"jsmesstest",
+          "type":"arcadecabinet",
           "properties":{
             "position":[4.5,0,0],
             "persist":true,
@@ -47,9 +47,9 @@ elation.require("engine.engine", function() {
         "joust":{
           "name":"joust",
           "parentname":"",
-          "type":"jsmesstest",
+          "type":"arcadecabinet",
           "properties":{
-            "position":[9,0,0],
+            "position":[-4.5,0,0],
             "persist":true,
             "gamename":"joust", 
             "render.gltf":"/media/vrcade/models/joust/joust.json"
