@@ -7,9 +7,9 @@ elation.require("engine.engine", function() {
       "properties":{
         "position":[0,-4,0],
         "persist":true,
-        "textures.map":"/media/space/textures/carpet-stars.jpg",
+        "textures.map":"/media/vrcade/textures/carpet-stars.jpg",
         "textures.mapRepeat":[100,100],
-        "textures.normalMap":"/media/space/textures/carpet01-normal.jpg"
+        "textures.normalMap":"/media/vrcade/textures/carpet-normal.jpg"
       },
       "things":{
         "sun":{
