@@ -1,7 +1,7 @@
-elation.require('engine.external.jsmess.jsmess-webaudio', function() {
+elation.require('vrcade.external.jsmess-webaudio', function() {
   elation.component.add('vrcade.standalone', function() {
     this.init = function() {
-      var gamename = prompt('Game name?');
+      var gamename = (document.location.hash ? document.location.hash.substr(1) : prompt('Game name?'));
       if (gamename) {
         elation.require('vrcade.games.' + gamename + '.messloader');
       }
