@@ -1,25 +1,17 @@
 elation.require("engine.engine", function() {
   elation.engine.create("test", ["physics", "controls", "sound", "ai", "world", "admin", "render"], function(engine) {
     engine.systems.world.load({ 
-      "name":"default",
+      "name":"ground",
       "parentname":"",
-      "type":"sector",
+      "type":"terrain",
       "properties":{
-        "persist":true
+        "position":[0,0,0],
+        "persist":true,
+        "textures.map":"/media/space/textures/carpet-stars.jpg",
+        "textures.mapRepeat":[100,100],
+        "textures.normalMap":"/media/space/textures/carpet01-normal.jpg"
       },
       "things":{
-        "ground":{
-          "name":"ground",
-          "parentname":"",
-          "type":"terrain",
-          "properties":{
-            "position":[0,0,100],
-            "persist":true,
-            "textures.map":"/media/space/textures/carpet-stars.jpg",
-            "textures.mapRepeat":[100,100],
-            "textures.normalMap":"/media/space/textures/carpet01-normal.jpg"
-          }
-        },
         "sun":{
           "name":"sun",
           "parentname":"",
