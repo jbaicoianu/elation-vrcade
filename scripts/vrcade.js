@@ -54,7 +54,18 @@ elation.require("engine.engine", function() {
             "gamename":"joust", 
             "render.gltf":"/media/vrcade/models/joust/joust.json"
           }
-        }
+        },
+        "moonpatrol":{
+          "name":"moonpatrol",
+          "parentname":"",
+          "type":"arcadecabinet",
+          "properties":{
+            "position":[9,0,0],
+            "persist":true,
+            "gamename":"mpatrol", 
+            "render.gltf":"/media/vrcade/models/moon-patrol/moon-patrol.json"
+          }
+        },
       } 
     });
     engine.start();
