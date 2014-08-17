@@ -23,25 +23,28 @@ elation.require("engine.engine", function() {
             "intensity":0.6
           }
         },
+        "pacman":{
+          "name":"pacman",
+          "parentname":"",
+          "type":"arcadecabinet",
+          "properties":{
+            "position":[0,0,2.25],
+            "persist":true,
+            "gamename":"pacman", 
+            "loader":"messloader", 
+            "render.gltf":"/media/vrcade/models/pacman/pacman.json"
+          }
+        },
         "galaxian":{
           "name":"galaxian",
           "parentname":"",
           "type":"arcadecabinet",
           "properties":{
             "persist":true,
+            "position":[-2.25,0,0],
+            "orientation":[0,-0.7071067811865474,0,0.7071067811865475],
             "gamename":"galaxian", 
             "render.gltf":"/media/vrcade/models/galaga/galaga.json" 
-          }
-        },
-        "pacman":{
-          "name":"pacman",
-          "parentname":"",
-          "type":"arcadecabinet",
-          "properties":{
-            "position":[4.5,0,0],
-            "persist":true,
-            "gamename":"pacman", 
-            "render.gltf":"/media/vrcade/models/pacman/pacman.json"
           }
         },
         "joust":{
@@ -49,7 +52,8 @@ elation.require("engine.engine", function() {
           "parentname":"",
           "type":"arcadecabinet",
           "properties":{
-            "position":[-4.5,0,0],
+            "position":[2.25,0,0],
+            "orientation":[0,0.7071067811865474,0,0.7071067811865475],
             "persist":true,
             "gamename":"joust", 
             "render.gltf":"/media/vrcade/models/joust/joust.json"
@@ -60,7 +64,8 @@ elation.require("engine.engine", function() {
           "parentname":"",
           "type":"arcadecabinet",
           "properties":{
-            "position":[9,0,0],
+            "position":[0,0,-2.25],
+            "orientation":[0,1,0,0],
             "persist":true,
             "gamename":"mpatrol", 
             "render.gltf":"/media/vrcade/models/moon-patrol/moon-patrol.json"
