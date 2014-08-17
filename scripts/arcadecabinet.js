@@ -2,7 +2,8 @@ elation.require(['vrcade.external.jsmess-webaudio'], function() {
   elation.component.add('engine.things.arcadecabinet', function() {
     this.postinit = function() {
       this.defineProperties({
-        gamename: { type: 'string', default: 'pacman' }
+        gamename: { type: 'string', default: 'pacman' },
+        loader: { type: 'string', default: 'messloader' },
       });
       var view = this.engine.systems.render.views.main;
       elation.events.add(view, 'render_view_prerender', elation.bind(this, this.refreshtexture));
@@ -10,7 +11,7 @@ elation.require(['vrcade.external.jsmess-webaudio'], function() {
     }
     this.poweron = function() {
       //if (typeof JSMESS == 'undefined') {
-        elation.require('vrcade.games.' + this.properties.gamename + '.messloader', elation.bind(this, this.begin));
+        elation.require('vrcade.games.' + this.properties.gamename + '.' + this.properties.loader, elation.bind(this, this.begin));
       //} else {
       //  this.begin();
       //}
