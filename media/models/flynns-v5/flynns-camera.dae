@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.72.2 commit date:2014-11-08, commit time:20:17, hash:5cce2e1</authoring_tool>
+    </contributor>
+    <created>2014-11-09T23:44:07</created>
+    <modified>2014-11-09T23:44:07</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-01-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">90.00004</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">5000</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+    <camera id="Camera-03-camera" name="Camera.001">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">500</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+    <camera id="Camera-04-camera" name="Camera.004">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">90</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">500</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+    <camera id="Camera-05-camera" name="Camera.005">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">1000</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_images/>
+  <library_effects/>
+  <library_animations>
+    <animation id="Camera-05_rotation_euler_X">
+      <source id="Camera-05_rotation_euler_X-input">
+        <float_array id="Camera-05_rotation_euler_X-input-array" count="1">65.03164</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_X-input-array" count="1" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_X-output">
+        <float_array id="Camera-05_rotation_euler_X-output-array" count="1">0</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_X-output-array" count="1" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_X-interpolation">
+        <Name_array id="Camera-05_rotation_euler_X-interpolation-array" count="1">BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_X-interpolation-array" count="1" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_X-intangent">
+        <float_array id="Camera-05_rotation_euler_X-intangent-array" count="2">65.00318 0</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_X-intangent-array" count="1" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_X-outtangent">
+        <float_array id="Camera-05_rotation_euler_X-outtangent-array" count="2">65.08651 0</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_X-outtangent-array" count="1" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Camera-05_rotation_euler_X-sampler">
+        <input semantic="INPUT" source="#Camera-05_rotation_euler_X-input"/>
+        <input semantic="OUTPUT" source="#Camera-05_rotation_euler_X-output"/>
+        <input semantic="INTERPOLATION" source="#Camera-05_rotation_euler_X-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Camera-05_rotation_euler_X-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Camera-05_rotation_euler_X-outtangent"/>
+      </sampler>
+      <channel source="#Camera-05_rotation_euler_X-sampler" target="Camera-05/rotationX.ANGLE"/>
+    </animation>
+    <animation id="Camera-05_rotation_euler_Y">
+      <source id="Camera-05_rotation_euler_Y-input">
+        <float_array id="Camera-05_rotation_euler_Y-input-array" count="1">65.03164</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Y-input-array" count="1" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Y-output">
+        <float_array id="Camera-05_rotation_euler_Y-output-array" count="1">90</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Y-output-array" count="1" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Y-interpolation">
+        <Name_array id="Camera-05_rotation_euler_Y-interpolation-array" count="1">BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Y-interpolation-array" count="1" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Y-intangent">
+        <float_array id="Camera-05_rotation_euler_Y-intangent-array" count="2">65.00318 90</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Y-intangent-array" count="1" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Y-outtangent">
+        <float_array id="Camera-05_rotation_euler_Y-outtangent-array" count="2">65.08651 90</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Y-outtangent-array" count="1" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Camera-05_rotation_euler_Y-sampler">
+        <input semantic="INPUT" source="#Camera-05_rotation_euler_Y-input"/>
+        <input semantic="OUTPUT" source="#Camera-05_rotation_euler_Y-output"/>
+        <input semantic="INTERPOLATION" source="#Camera-05_rotation_euler_Y-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Camera-05_rotation_euler_Y-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Camera-05_rotation_euler_Y-outtangent"/>
+      </sampler>
+      <channel source="#Camera-05_rotation_euler_Y-sampler" target="Camera-05/rotationY.ANGLE"/>
+    </animation>
+    <animation id="Camera-05_rotation_euler_Z">
+      <source id="Camera-05_rotation_euler_Z-input">
+        <float_array id="Camera-05_rotation_euler_Z-input-array" count="1">65.03164</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Z-input-array" count="1" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Z-output">
+        <float_array id="Camera-05_rotation_euler_Z-output-array" count="1">0</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Z-output-array" count="1" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Z-interpolation">
+        <Name_array id="Camera-05_rotation_euler_Z-interpolation-array" count="1">BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Z-interpolation-array" count="1" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Z-intangent">
+        <float_array id="Camera-05_rotation_euler_Z-intangent-array" count="2">65.00318 0</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Z-intangent-array" count="1" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Camera-05_rotation_euler_Z-outtangent">
+        <float_array id="Camera-05_rotation_euler_Z-outtangent-array" count="2">65.08651 0</float_array>
+        <technique_common>
+          <accessor source="#Camera-05_rotation_euler_Z-outtangent-array" count="1" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Camera-05_rotation_euler_Z-sampler">
+        <input semantic="INPUT" source="#Camera-05_rotation_euler_Z-input"/>
+        <input semantic="OUTPUT" source="#Camera-05_rotation_euler_Z-output"/>
+        <input semantic="INTERPOLATION" source="#Camera-05_rotation_euler_Z-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Camera-05_rotation_euler_Z-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Camera-05_rotation_euler_Z-outtangent"/>
+      </sampler>
+      <channel source="#Camera-05_rotation_euler_Z-sampler" target="Camera-05/rotationZ.ANGLE"/>
+    </animation>
+  </library_animations>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="combined" name="combined">
+      <node id="Camera-01" name="Camera-01" type="NODE">
+        <translate sid="location">-4.723183 -13.109 6.614848</translate>
+        <rotate sid="rotationZ">0 0 1 49.23768</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 88.54195</rotate>
+        <scale sid="scale">1 1 0.9999999</scale>
+        <instance_camera url="#Camera-01-camera"/>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>1</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-01-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+            <Track_To_constraint>
+              <enforce>1</enforce>
+              <flag>1</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-01-target</target_id>
+              <type>2</type>
+            </Track_To_constraint>
+          </technique>
+        </extra>
+      </node>
+      <node id="Camera-01-target" name="Camera-01-target" type="NODE">
+        <translate sid="location">-18.67748 -1.079979 6.145913</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>17</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-01-target-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+          </technique>
+        </extra>
+      </node>
+      <node id="Camera-03" name="Camera-03" type="NODE">
+        <translate sid="location">5.183843 -15.73471 12.10178</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 81.61216</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_camera url="#Camera-03-camera"/>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>1</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-03-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+            <Locked_Track_constraint>
+              <enforce>1</enforce>
+              <flag>17</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-03-target</target_id>
+              <type>13</type>
+            </Locked_Track_constraint>
+          </technique>
+        </extra>
+      </node>
+      <node id="Camera-03-target" name="Camera-03-target" type="NODE">
+        <translate sid="location">5.183842 9.060221 8.445757</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>17</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-03-target-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+          </technique>
+        </extra>
+      </node>
+      <node id="Camera-04" name="Camera-04" type="NODE">
+        <translate sid="location">5.183841 33.95856 9.445284</translate>
+        <rotate sid="rotationZ">0 0 1 90.00003</rotate>
+        <rotate sid="rotationY">0 1 0 8.14222e-13</rotate>
+        <rotate sid="rotationX">1 0 0 72.34893</rotate>
+        <scale sid="scale">1 1 0.9999999</scale>
+        <instance_camera url="#Camera-04-camera"/>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>1</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-04-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+            <Track_To_constraint>
+              <enforce>1</enforce>
+              <flag>17</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-04-target</target_id>
+              <type>2</type>
+            </Track_To_constraint>
+          </technique>
+        </extra>
+      </node>
+      <node id="Camera-04-target" name="Camera-04-target" type="NODE">
+        <translate sid="location">-7.386873 33.95855 5.445282</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>17</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-04-target-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+          </technique>
+        </extra>
+      </node>
+      <node id="Camera-05" name="Camera-05" type="NODE">
+        <translate sid="location">-40.64377 -31.19582 6.830695</translate>
+        <rotate sid="rotationZ">0 0 1 -30.24127</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 94.55124</rotate>
+        <scale sid="scale">1 1 0.9999999</scale>
+        <instance_camera url="#Camera-05-camera"/>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>1</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-05-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+            <Track_To_constraint>
+              <enforce>1</enforce>
+              <flag>17</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-05-target</target_id>
+              <type>2</type>
+            </Track_To_constraint>
+          </technique>
+        </extra>
+      </node>
+      <node id="Camera-05-target" name="Camera-05-target" type="NODE">
+        <translate sid="location">5.84663 48.5505 14.17859</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="blender">
+            <Follow_Path_constraint>
+              <enforce>1</enforce>
+              <flag>17</flag>
+              <headtail>0</headtail>
+              <lin_error>0</lin_error>
+              <own_space>0</own_space>
+              <rot_error>0</rot_error>
+              <tar_space>0</tar_space>
+              <target_id>Camera-05-target-path</target_id>
+              <type>4</type>
+            </Follow_Path_constraint>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#combined"/>
+  </scene>
+</COLLADA>
