@@ -1,0 +1,8 @@
+#output {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  height: 10em;
+  overflow: auto;
+  background: #fff;
+}
