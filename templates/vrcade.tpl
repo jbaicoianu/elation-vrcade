@@ -4,4 +4,5 @@
 {dependency name="utils.template"}
 {dependency name="vrcade.vrcade"}
 
+<div data-elation-component="vrcade"></div>
 

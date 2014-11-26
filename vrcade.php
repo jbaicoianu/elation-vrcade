@@ -3,6 +3,8 @@
 class Component_vrcade extends Component {
   public function init() {
     OrmManager::LoadModel("vrcade");
+    $cfg  = ConfigManager::singleton();
+    $cfg->current["page"]["theme"] = "dark";
   }
 
   public function controller_vrcade($args) {

@@ -8,6 +8,7 @@ elation.require(['vrcade.external.jsmess-webaudio'], function() {
       var view = this.engine.systems.render.views.main;
       elation.events.add(view, 'render_view_prerender', elation.bind(this, this.refreshtexture));
       elation.events.add(this, 'click', elation.bind(this, this.handleclick));
+      this.dumbcounter = 0;
     }
     this.poweron = function() {
       //if (typeof JSMESS == 'undefined') {
