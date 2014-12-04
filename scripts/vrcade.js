@@ -85,7 +85,7 @@ console.log('view is', this.view);
 
     this.createChildren = function() {
       this.engine.systems.world.setFog(1, 50, 0x111111);
-      this.engine.systems.world.setSky('/media/space/textures/nightskybox', 'jpg', ['p', 'n']);
+      this.engine.systems.world.setSky('/media/vrcade/textures/skybox', 'jpg', ['p', 'n']);
 
       this.player = this.spawn('vrcadeplayer', 'player', { "position":[0,2.4,0], mass: 50 });
       this.setview(this.view);
