@@ -47,8 +47,8 @@ elation.require(['vrcade.external.jsmess-webaudio'], function() {
       }
     }
     this.handleclick = function(ev) {
-      this.poweron();
-      ev.stopPropagation();
+      //this.poweron();
+      //ev.stopPropagation();
     }
   }, elation.engine.things.generic);
 });
