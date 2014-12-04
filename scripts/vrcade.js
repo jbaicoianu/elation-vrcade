@@ -1,5 +1,5 @@
 elation.require([
-    "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.togglebutton", "ui.list",
+    "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.togglebutton", "ui.list", "ui.label",
     "engine.engine", "engine.external.three.tween", "vrcade.vrcadeplayer", "engine.things.pathtracker", "engine.things.camera", "engine.things.menu"
   ], function() {
 
