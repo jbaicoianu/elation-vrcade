@@ -27,9 +27,10 @@ elation.require([
           }
         });
         this.view = elation.engine.systems.render.view("main", elation.html.create({ tag: 'div', append: document.body }), { fullsize: 1, picking: 1, engine: 'vrcade', showstats: true } );
-        this.engine.systems.world.children.vrcade.setview(this.view);
+        this.gameobj = this.engine.systems.world.children.vrcade;
+        this.gameobj.setview(this.view);
+        elation.events.add(this.loader, 'ui_loader_finish', elation.bind(this.gameobj, this.gameobj.handleLoaderFinished));
         engine.start();
-console.log('VIEW', this.view);
       }));
 
     }
@@ -61,13 +62,13 @@ console.log('VIEW', this.view);
     this.gamenum = 0;
     this.cabinets = {};
     this.started = false;
+    this.loaded = false;
 
     this.postinit = function() {
       this.defineProperties({
         view: { type: 'object' }
       });
       if (this.properties.view) this.view = this.properties.view;
-console.log('view is', this.view);
       this.initControls();
     }
     this.createObject3D = function() {
@@ -75,7 +76,7 @@ console.log('view is', this.view);
     }
     this.initControls = function() {
       this.controlstate = this.engine.systems.controls.addContext('vrcade', {
-        'menu': ['keyboard_esc', elation.bind(this, this.toggleMenu)],
+        'menu': ['keyboard_esc,keyboard_tab', elation.bind(this, this.toggleMenu)],
         'pointerlock': ['pointerlock', elation.bind(this, this.togglePointerLock)],
         'vr_toggle': ['keyboard_ctrl_rightsquarebracket', elation.bind(this, this.toggleVR)],
         'vr_calibrate': ['keyboard_ctrl_leftsquarebracket', elation.bind(this, this.calibrateVR)],
@@ -90,11 +91,7 @@ console.log('view is', this.view);
       this.player = this.spawn('vrcadeplayer', 'player', { "position":[0,2.4,0], mass: 50 });
       this.setview(this.view);
 
-      // FIXME - without the timeout, this is being created before world exists, so mouse picking isn't working
-      setTimeout(function() { this.showMenu(); }.bind(this), 1500);
-
-
-      //elation.events.add(this.neighborhood, 'thing_load', elation.bind(this, this.create_games));
+      this.showMenu();
     }
     this.create_lights = function() {
       var lights = [];
@@ -147,10 +144,9 @@ console.log('view is', this.view);
       }
     }
     this.showMenu = function() {
-this.setview(this.view);
       if (!this.menu) {
         this.menu = this.player.spawn('menu', null, { 
-          position: [0,0,-1],
+          position: [0,0,-2],
           items: [
             { 
               text: 'Intro',
@@ -177,7 +173,7 @@ this.setview(this.view);
 */
           ],
           labelcfg: {
-            size: .05,
+            size: .1,
             color: 0x999999,
             hovercolor: 0x003300,
             disabledcolor: 0x000000,
@@ -195,7 +191,9 @@ this.setview(this.view);
       console.log('hide menu');
       this.player.remove(this.menu);
       if (this.configmenu) this.configmenu.hide();
-      this.player.enable();
+      if (this.loaded) {
+        this.player.enable();
+      }
       this.menuShowing = false;
       this.refresh();
     }
@@ -327,7 +325,7 @@ this.setview(this.view);
         var sensitivity = elation.ui.slider({
           append: controlpanel,
           min: 0,
-          max: 100,
+          max: 500,
           snap: 1,
           handles: [
             {
@@ -429,6 +427,14 @@ this.setview(this.view);
     }
     this.handlegroupload = function() {
       //console.log('new group loaded');
+    }
+    this.handleLoaderFinished = function() {
+      if (!this.loaded) {
+        this.loaded = true;
+        if (!this.menuShowing) {
+          this.player.enable();
+        }
+      }
     }
   }, elation.engine.things.generic);
 
