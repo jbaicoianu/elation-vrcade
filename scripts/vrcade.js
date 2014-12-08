@@ -38,9 +38,9 @@ elation.require([
 
   elation.component.add('engine.things.vrcade', function() {
     this.gamegroups = [
-/*
       {
         position: [10,0,0],
+        rotation: [0, Math.PI/2, 0],
         //scale: [1.5, 1.5, 1.5],
         games: [
           { name: 'pacman', model: 'pacman', gamename: 'pacman' },
@@ -49,7 +49,6 @@ elation.require([
           { name: 'joust', model: 'joust', gamename: 'joust' },
         ]
       },
-*/
 /*
       {
         position: [10,0,10],
