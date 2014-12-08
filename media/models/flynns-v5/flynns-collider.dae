@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.71.0 commit date:2014-06-12, commit time:18:39, hash:169c95b</authoring_tool>
     </contributor>
-    <created>2014-11-23T04:36:16</created>
-    <modified>2014-11-23T04:36:16</modified>
+    <created>2014-12-07T22:53:08</created>
+    <modified>2014-12-07T22:53:08</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -401,7 +401,7 @@
     <geometry id="Cube_177-mesh" name="Cube.177">
       <mesh>
         <source id="Cube_177-mesh-positions">
-          <float_array id="Cube_177-mesh-positions-array" count="24">-32.5 -65 -3.5 -32.5 65 -3.5 32.5 65 -3.5 32.5 -65 -3.5 -32.5 -65 3.5 -32.5 65 3.5 32.5 65 3.5 32.5 -65 3.5</float_array>
+          <float_array id="Cube_177-mesh-positions-array" count="24">-32.5 -72 -3.5 -32.5 57 -3.5 32.5 57 -3.5 32.5 -72 -3.5 -32.5 -72 3.5 -32.5 57 3.5 32.5 57 3.5 32.5 -72 3.5</float_array>
           <technique_common>
             <accessor source="#Cube_177-mesh-positions-array" count="8" stride="3">
               <param name="X" type="float"/>
@@ -1751,6 +1751,39 @@
         </polylist>
       </mesh>
     </geometry>
+    <geometry id="Cube_019-mesh" name="Cube.019">
+      <mesh>
+        <source id="Cube_019-mesh-positions">
+          <float_array id="Cube_019-mesh-positions-array" count="24">-64 -89 -3.5 -64 89 -3.5 64 89 -3.5 64 -89 -3.5 -64 -89 3.5 -64 89 3.5 64 89 3.5 64 -89 3.5</float_array>
+          <technique_common>
+            <accessor source="#Cube_019-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_019-mesh-normals">
+          <float_array id="Cube_019-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_019-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_019-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_019-mesh-positions"/>
+        </vertices>
+        <polylist material="_collider-box-material" count="12">
+          <input semantic="VERTEX" source="#Cube_019-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_019-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
   </library_geometries>
   <library_controllers/>
   <library_visual_scenes>
@@ -1856,7 +1889,7 @@
         </instance_geometry>
       </node>
       <node id="collider-floor" name="collider-floor" type="NODE">
-        <matrix sid="transform">1 0 0 -15 0 1 0 28 0 0 1 -3.5 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -15 0 1 0 36 0 0 1 -3.5 0 0 0 1</matrix>
         <instance_geometry url="#Cube_177-mesh">
           <bind_material>
             <technique_common>
@@ -2261,6 +2294,16 @@
           <bind_material>
             <technique_common>
               <instance_material symbol="_collider-cylinder-material" target="#_collider-cylinder-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="collider-floor_009" name="collider-floor_009" type="NODE">
+        <matrix sid="transform">1 0 0 -27 0 1 0 34 0 0 1 -4 0 0 0 1</matrix>
+        <instance_geometry url="#Cube_019-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_collider-box-material" target="#_collider-box-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>

@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.71.0 commit date:2014-06-12, commit time:18:39, hash:169c95b</authoring_tool>
     </contributor>
-    <created>2014-11-25T22:00:21</created>
-    <modified>2014-11-25T22:00:21</modified>
+    <created>2014-12-07T21:17:56</created>
+    <modified>2014-12-07T21:17:56</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -77,7 +77,7 @@
           </sampler2D>
         </newparam>
         <technique sid="common">
-          <lambert>
+          <phong>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
@@ -90,13 +90,16 @@
             <specular>
               <texture texture="concrete01-specular-sampler" texcoord="UVMap"/>
             </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
             <transparent>
               <texture texture="concrete01-diffuse-sampler" texcoord="UVMap"/>
             </transparent>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
             </index_of_refraction>
-          </lambert>
+          </phong>
           <extra>
             <technique profile="FCOLLADA">
               <bump>
@@ -186,7 +189,7 @@
           </sampler2D>
         </newparam>
         <technique sid="common">
-          <lambert>
+          <phong>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
@@ -199,10 +202,13 @@
             <specular>
               <texture texture="asphalt01-specular-sampler" texcoord="UVMap"/>
             </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
             </index_of_refraction>
-          </lambert>
+          </phong>
           <extra>
             <technique profile="FCOLLADA">
               <bump>
