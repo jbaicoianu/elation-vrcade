@@ -1,5 +1,5 @@
 elation.require([
-    "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.togglebutton", "ui.list", "ui.label",
+    "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.toggle", "ui.list", "ui.label",
     "engine.engine", "engine.external.three.tween", "vrcade.vrcadeplayer", "engine.things.pathtracker", "engine.things.camera", "engine.things.menu"
   ], function() {
 
@@ -38,6 +38,7 @@ elation.require([
 
   elation.component.add('engine.things.vrcade', function() {
     this.gamegroups = [
+/*
       {
         position: [10,0,0],
         //scale: [1.5, 1.5, 1.5],
@@ -48,6 +49,7 @@ elation.require([
           { name: 'joust', model: 'joust', gamename: 'joust' },
         ]
       },
+*/
 /*
       {
         position: [10,0,10],
@@ -330,12 +332,18 @@ elation.require([
           handles: [
             {
               name: 'handle_one',
-              value: this.engine.systems.controls.mousesensitivity,
+              value: this.engine.systems.controls.settings.mouse.sensitivity,
               labelprefix: 'Sensitivity:',
-              bindvar: [this.engine.systems.controls, 'mousesensitivity']
+              bindvar: [this.engine.systems.controls.settings.mouse, 'sensitivity']
             }
           ]
         });
+        var inverty = elation.ui.toggle({
+          label: 'Invert Y',
+          append: controlpanel,
+          bindvar: [this.engine.systems.controls.settings.mouse, 'invertY']
+        });
+
         label = elation.ui.labeldivider({
           append: controlpanel, 
           label: 'Gamepad Settings'
@@ -372,16 +380,32 @@ elation.require([
         var videopanel = elation.ui.panel({
           orientation: 'vertical'
         });
-        var oculus = elation.ui.togglebutton({
+        var oculus = elation.ui.toggle({
           label: 'Oculus Rift',
           append: videopanel,
+          events: { toggle: elation.bind(this, this.toggleVR) }
         });
-        elation.events.add(oculus, 'ui_button_toggle', elation.bind(this, this.toggleVR));
-        var fullscreen = elation.ui.togglebutton({
+        var fullscreen = elation.ui.toggle({
           label: 'Fullscreen',
           append: videopanel,
+          events: { toggle: elation.bind(this, this.toggleFullscreen) }
         });
-        elation.events.add(fullscreen, 'ui_button_toggle', elation.bind(this, this.toggleFullscreen));
+        this.view.scale = 100;
+        var scale = elation.ui.slider({
+          append: videopanel,
+          min: 1,
+          max: 200,
+          snap: 1,
+          handles: [
+            {
+              name: 'handle_one_scale',
+              value: this.view.scale,
+              labelprefix: 'View scale:',
+              bindvar: [this.view, 'scale']
+            }
+          ],
+          events: { ui_slider_change: elation.bind(this.view.rendersystem, this.view.rendersystem.setdirty) }
+        });
 
         var configtabs = elation.ui.tabbedcontent({
           append: configpanel,
