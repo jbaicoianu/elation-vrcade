@@ -4,17 +4,24 @@ elation.require(['engine.things.generic', 'vrcade.external.JSMESSLoader', 'vrcad
       this.defineProperties({
         gamename: { type: 'string', default: 'pacman' },
         loader: { type: 'string', default: 'messloader' },
+        working: { type: 'bool', default: true },
       });
+
       var view = this.engine.systems.render.views.main;
       elation.events.add(view, 'render_view_prerender', elation.bind(this, this.refreshtexture));
       elation.events.add(this, 'click', elation.bind(this, this.handleclick));
       this.dumbcounter = 0;
+      this.user = false;
 
       this.addTag('usable');
       elation.events.add(this, 'thing_use_focus', elation.bind(this, this.useFocus));
       elation.events.add(this, 'thing_use_blur', elation.bind(this, this.useBlur));
       elation.events.add(this, 'thing_use_activate', elation.bind(this, this.useActivate));
-  
+
+      this.contextname = 'arcadecabinet_' + this.id;
+      this.controlstate = this.engine.systems.controls.addContext(this.contextname, {
+        'quit': ['keyboard_esc', elation.bind(this, this.pause)],
+      });
     }
     this.poweron = function() {
       if (!this.running && !this.loading) {
@@ -43,6 +50,7 @@ elation.require(['engine.things.generic', 'vrcade.external.JSMESSLoader', 'vrcad
           }.bind(this), 100);
         }
         //setTimeout(elation.bind(this, this.begin), 1000);
+        this.engine.systems.controls.activateContext(this.contextname, this);
       } else if (this.running && this.paused) {
         this.unpause();
       }
@@ -115,12 +123,17 @@ elation.require(['engine.things.generic', 'vrcade.external.JSMESSLoader', 'vrcad
         this.paused = true;
         this.refresh();
       }
+      this.engine.systems.controls.deactivateContext(this.contextname, this);
+      if (this.user) {
+        this.user.enable();
+      }
     }
     this.unpause = function() {
       if (this.running && this.paused) {
         this.paused = false;
         this.jsmess.Module.resumeMainLoop();
         this.refresh();
+        this.engine.systems.controls.activateContext(this.contextname, this);
       }
     }
     this.handleclick = function(ev) {
@@ -135,10 +148,14 @@ elation.require(['engine.things.generic', 'vrcade.external.JSMESSLoader', 'vrcad
       if (this.running) {
         this.pause();
       }
+      this.user = false;
     }
     this.useActivate = function(ev) {
-      console.log('go go go', this.properties.gamename);
-      this.poweron();
+      if (this.properties.working) {
+        console.log('go go go', this.properties.gamename);
+        this.user = ev.data;
+        this.poweron();
+      }
     }
   }, elation.engine.things.generic);
 });
