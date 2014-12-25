@@ -44,10 +44,10 @@ elation.require([
         rotation: [0, Math.PI/2, 0],
         //scale: [1.5, 1.5, 1.5],
         games: [
-          { name: 'pacman', model: 'pacman', gamename: 'pacman' },
-          { name: 'galaxian', model: 'galaga', gamename: 'galaxian' },
-          { name: 'moonpatrol', model: 'moon-patrol', gamename: 'mpatrol' },
-          { name: 'joust', model: 'joust', gamename: 'joust' },
+          { name: 'pacman', model: 'pacman', gamename: 'pacman', working: true },
+          { name: 'galaxian', model: 'galaga', gamename: 'galaxian', working: false },
+          { name: 'moonpatrol', model: 'moon-patrol', gamename: 'mpatrol', working: false },
+          { name: 'joust', model: 'joust', gamename: 'joust', working: false },
         ]
       },
 /*
@@ -492,6 +492,7 @@ elation.require([
         var gameargs = {
           'name': name,
           'gamename': this.games[i].gamename,
+          'working': this.games[i].working,
           'loader': 'messloader',
           //'render.gltf': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.json',
           'render.collada': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.dae',
