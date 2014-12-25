@@ -1,9 +1,10 @@
 elation.require([
     "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.toggle", "ui.list", "ui.label",
-    "engine.engine", "engine.external.three.tween", "vrcade.vrcadeplayer", "engine.things.pathtracker", "engine.things.camera", "engine.things.menu"
+    "engine.engine", "engine.external.three.tween", "engine.things.camera", "engine.things.menu",
+    "vrcade.vrcadeplayer", "vrcade.arcadecabinet"
   ], function() {
 
-  elation.template.add('vrcade.intro', '<div data-elation-component="ui.spinner" data-elation-args.label="loading" data-elation-args.type="dark"></div>');
+  //elation.template.add('vrcade.intro', '<div data-elation-component="ui.spinner" data-elation-args.label="loading" data-elation-args.type="dark"></div>');
 
   elation.component.add('vrcade', function() {
     this.init = function() {
@@ -26,7 +27,7 @@ elation.require([
           properties: {
           }
         });
-        this.view = elation.engine.systems.render.view("main", elation.html.create({ tag: 'div', append: document.body }), { fullsize: 1, picking: 1, engine: 'vrcade', showstats: true } );
+        this.view = elation.engine.systems.render.view("main", elation.html.create({ tag: 'div', append: document.body }), { fullsize: 1, picking: true, engine: 'vrcade', showstats: true } );
         this.gameobj = this.engine.systems.world.children.vrcade;
         this.gameobj.setview(this.view);
         elation.events.add(this.loader, 'ui_loader_finish', elation.bind(this.gameobj, this.gameobj.handleLoaderFinished));
@@ -77,7 +78,7 @@ elation.require([
     }
     this.initControls = function() {
       this.controlstate = this.engine.systems.controls.addContext('vrcade', {
-        'menu': ['keyboard_esc,keyboard_tab', elation.bind(this, this.toggleMenu)],
+        'menu': ['keyboard_esc,gamepad_0_button_9', elation.bind(this, this.toggleMenu)],
         'pointerlock': ['pointerlock', elation.bind(this, this.togglePointerLock)],
         'vr_toggle': ['keyboard_ctrl_rightsquarebracket', elation.bind(this, this.toggleVR)],
         'vr_calibrate': ['keyboard_ctrl_leftsquarebracket', elation.bind(this, this.calibrateVR)],
@@ -103,13 +104,15 @@ elation.require([
         "intensity":0.6,
         //"velocity":[0,0,0.05]
       }));
-      lights.push(this.spawn('light', 'sun', {
+      /*
+      lights.push(this.spawn('light', 'sun2', {
         "position":[-50,-30,-30],
         "persist":false,
         "type":"directional",
         "intensity":0.2,
         //"velocity":[0,0,0.05]
       }));
+      */
       lights.push(this.spawn('light', 'ambient', {
         "position":[0,0,0],
         "persist":false,
@@ -175,6 +178,7 @@ elation.require([
           ],
           labelcfg: {
             size: .1,
+            lineheight: 1.5,
             color: 0x999999,
             hovercolor: 0x003300,
             disabledcolor: 0x000000,
@@ -185,17 +189,18 @@ elation.require([
         this.player.add(this.menu);
       }
       this.player.disable();
+      this.menu.enable();
       this.menuShowing = true;
       this.refresh();
     }
     this.hideMenu = function() {
-      console.log('hide menu');
       this.player.remove(this.menu);
       if (this.configmenu) this.configmenu.hide();
       if (this.loaded) {
         this.player.enable();
       }
       this.menuShowing = false;
+      this.menu.disable();
       this.refresh();
     }
     this.toggleMenu = function(ev) {
@@ -487,7 +492,7 @@ elation.require([
         var gameargs = {
           'name': name,
           'gamename': this.games[i].gamename,
-          'loader': 'messloadergl',
+          'loader': 'messloader',
           //'render.gltf': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.json',
           'render.collada': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.dae',
           'scale': [scale, scale, scale],
