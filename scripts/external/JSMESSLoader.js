@@ -174,14 +174,18 @@ JSMESSLoader.prototype.init_emscripten = function() {
     if (jsmess_web_audio) {
       var audioctx = jsmess_web_audio.get_context();
       if (audioctx) {
-        this.Module.arguments.push("-samplerate", asample.sampleRate.toString());
+        this.messargs.push("-samplerate", audioctx.sampleRate.toString());
       }
     }
   } else {
     Array.prototype.push.apply(this.messargs, ["-sound","none"]);
   }
 
-  var module = (typeof Module != 'undefined' ? Module : {});
+  //var module = (typeof Module != 'undefined' ? Module : {});
+  var module = this.Module;
+  // Set global emscripten module to point at us
+  Module = module;
+  
 
   // Create the emscripten module definition
   module.arguments = this.messargs;
@@ -210,7 +214,7 @@ JSMESSLoader.prototype.init_emscripten = function() {
 
   // Set the Module parameter in global scope, whether we're in a worker or the main thread
   // TODO - emscripten might support using a non-global for this, which would be cleaner
-  self.Module = this.Module = module;
+  self.Module = module;
 
   if (!this._runningInWorker) {
     this.canvas = module.canvas = this.create_canvas('canvas-' + this.systemname);
