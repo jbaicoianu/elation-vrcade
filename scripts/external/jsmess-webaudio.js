@@ -7,6 +7,7 @@ var context = null;
 var gain_node = null;
 var buffer_insert_point = null;
 var pending_buffers = [];
+var HEAP16 = window.HEAP16 || false;
 
 var numChannels = 2; // constant in jsmess
 var sampleScale = 32766;
@@ -51,7 +52,7 @@ function update_audio_stream (
   samples_this_frame // int. number of samples at pBuffer address.
 ) {
   lazy_init();
-  if (!context) return;
+  if (!context || !HEAP16) return;
 
   var buffer = context.createBuffer(
     numChannels, samples_this_frame, 
@@ -138,11 +139,15 @@ function tick () {
 function get_context() {
   return context;
 };
+function set_module(module) {
+  HEAP16 = module.HEAP16;
+};
 
 return {
   set_mastervolume: set_mastervolume,
   update_audio_stream: update_audio_stream,
-  get_context: get_context
+  get_context: get_context,
+  set_module: set_module
 };
 
 })();
