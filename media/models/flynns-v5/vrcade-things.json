@@ -1,0 +1,1053 @@
+[
+    {
+        "name": "PosterSNESWallLeft",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                4.37113598650285e-08,
+                -1.0,
+                -8.74227694680485e-08,
+                2.821299744937278e-07
+            ],
+            "position": [
+                -2.6227085174560547,
+                2.0979626403808593,
+                -4.993443461608887
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterSNESWallRight",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                3.0908619663705394e-08,
+                -0.7071067690849304,
+                3.0908619663705394e-08,
+                0.7071067690849304
+            ],
+            "position": [
+                1.0465191884994507,
+                2.0979626403808593,
+                -8.719513700866699
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterBackWall5",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -5.035653223074178e-15,
+                0.7071067094802856,
+                -5.035653223074178e-15,
+                0.7071068286895752
+            ],
+            "position": [
+                14.140736865234375,
+                2.0979626403808593,
+                7.885572743225098
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterBackWall3",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -5.035653223074178e-15,
+                0.7071067094802856,
+                -5.035653223074178e-15,
+                0.7071068286895752
+            ],
+            "position": [
+                14.140736865234375,
+                2.0979626403808593,
+                -4.5297764144897465
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterLeftWall3",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -7.549790126404332e-08,
+                1.6292068494294654e-07,
+                1.2300169461795536e-14,
+                1.0
+            ],
+            "position": [
+                3.1753070549011233,
+                2.0979626403808593,
+                14.84240915222168
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterLeftWall2",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -7.549790126404332e-08,
+                1.6292068494294654e-07,
+                1.2300169461795536e-14,
+                1.0
+            ],
+            "position": [
+                4.708851530456543,
+                2.0979626403808593,
+                14.84240915222168
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterLeftWall1",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -7.549790126404332e-08,
+                1.6292068494294654e-07,
+                1.2300169461795536e-14,
+                1.0
+            ],
+            "position": [
+                6.247669812011719,
+                2.0979626403808593,
+                14.84240915222168
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterBackWall4",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -5.035653223074178e-15,
+                0.7071067094802856,
+                -5.035653223074178e-15,
+                0.7071068286895752
+            ],
+            "position": [
+                14.140736865234375,
+                2.0979626403808593,
+                5.659697561645508
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterBackWall2",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -5.035653223074178e-15,
+                0.7071067094802856,
+                -5.035653223074178e-15,
+                0.7071068286895752
+            ],
+            "position": [
+                14.140736865234375,
+                2.0979626403808593,
+                -6.087606326293946
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "PosterBackWall1",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -5.035653223074178e-15,
+                0.7071067094802856,
+                -5.035653223074178e-15,
+                0.7071068286895752
+            ],
+            "position": [
+                14.140736865234375,
+                2.0979626403808593,
+                -7.660756814575196
+            ],
+            "render.collada": "/media/vrcade/models/poster/poster.dae",
+            "scale": [
+                0.6096,
+                0.6096,
+                0.6096
+            ],
+            "type": "arcadeposter"
+        },
+        "type": "arcadeposter"
+    },
+    {
+        "name": "skeeball.007",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -4.371138828673793e-08,
+                1.4702742134886648e-07,
+                6.426772701799595e-15,
+                1.0
+            ],
+            "position": [
+                10.819504705810548,
+                0.057830481719970704,
+                14.691170709228516
+            ],
+            "render.collada": "/media/vrcade/models/skeeball/skeeball.dae",
+            "scale": [
+                0.5272807150840759,
+                0.5272807150840759,
+                0.5272807150840759
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "skeeball.006",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                12.435700241088869,
+                0.057830481719970704,
+                14.691170709228516
+            ],
+            "render.collada": "/media/vrcade/models/skeeball/skeeball.dae",
+            "scale": [
+                0.5272807150840759,
+                0.5272807150840759,
+                0.5272807150840759
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "skeeball",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                14.058202368164062,
+                0.057830481719970704,
+                14.691170709228516
+            ],
+            "render.collada": "/media/vrcade/models/skeeball/skeeball.dae",
+            "scale": [
+                0.5272807150840759,
+                0.5272807150840759,
+                0.5272807150840759
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "ti85",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                3.0908619663705394e-08,
+                0.7071067690849304,
+                -3.0908619663705394e-08,
+                0.7071067690849304
+            ],
+            "position": [
+                13.073281091308594,
+                1.5367332344055176,
+                0.1951241545200348
+            ],
+            "render.collada": "/media/vrcade/models/ti85/ti85.dae",
+            "scale": [
+                0.3048,
+                0.3048,
+                0.3048
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ibmpc.001",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -1.3510587378476693e-15,
+                0.7071067690849304,
+                -1.3510587378476693e-15,
+                0.7071067690849304
+            ],
+            "position": [
+                13.653227087402344,
+                1.5416932514190675,
+                -0.8181348003387452
+            ],
+            "render.collada": "/media/vrcade/models/ibmpc/ibmpc.dae",
+            "scale": [
+                0.3657600145339966,
+                0.3657600145339966,
+                0.3657600145339966
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine15",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                2.9461666809082034,
+                0.05616197891235352,
+                3.204221859741211
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine23",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                -1.0,
+                0.0,
+                -4.371138828673793e-08
+            ],
+            "position": [
+                6.562106433105469,
+                0.05616197891235352,
+                -10.89132706604004
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine22",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -3.139163311516313e-07,
+                1.0,
+                5.205484399084526e-07,
+                -2.980233944072097e-07
+            ],
+            "position": [
+                7.659386549377442,
+                0.05616197891235352,
+                -10.89132706604004
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine21",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -3.139163311516313e-07,
+                1.0,
+                5.205484399084526e-07,
+                -2.980233944072097e-07
+            ],
+            "position": [
+                8.756666665649414,
+                0.05616197891235352,
+                -10.89132706604004
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine20",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -3.139163311516313e-07,
+                1.0,
+                5.205484399084526e-07,
+                -2.980233944072097e-07
+            ],
+            "position": [
+                9.853946200561523,
+                0.05616197891235352,
+                -10.89132706604004
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine19",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -3.139163311516313e-07,
+                1.0,
+                5.205484399084526e-07,
+                -2.980233944072097e-07
+            ],
+            "position": [
+                10.95122689819336,
+                0.05616197891235352,
+                -10.89132706604004
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine18",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -3.139163311516313e-07,
+                1.0,
+                5.205484399084526e-07,
+                -2.980233944072097e-07
+            ],
+            "position": [
+                12.04850643310547,
+                0.05616197891235352,
+                -10.89132706604004
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine12",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                2.9461666809082034,
+                0.05616197891235352,
+                -0.08761790771484375
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine13",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                2.9461666809082034,
+                0.05616197891235352,
+                1.0096620632171631
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine14",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                2.9461666809082034,
+                0.05616197891235352,
+                2.10694203414917
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine16",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                2.9461666809082034,
+                0.05616197891235352,
+                4.301501976013184
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine17",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                2.9461666809082034,
+                0.05616197891235352,
+                5.398782092285156
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine6",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -6.743495646333031e-07,
+                0.7071069478988647,
+                6.743495646333031e-07,
+                0.7071066498756409
+            ],
+            "position": [
+                1.9772304748535157,
+                0.05616197891235352,
+                -0.08761790771484375
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine7",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -6.743495646333031e-07,
+                0.7071069478988647,
+                6.743495646333031e-07,
+                0.7071066498756409
+            ],
+            "position": [
+                1.9772304748535157,
+                0.05616197891235352,
+                1.0096620632171631
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine8",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -6.743495646333031e-07,
+                0.7071069478988647,
+                6.743495646333031e-07,
+                0.7071066498756409
+            ],
+            "position": [
+                1.9772304748535157,
+                0.05616197891235352,
+                2.10694203414917
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine9",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -6.743495646333031e-07,
+                0.7071069478988647,
+                6.743495646333031e-07,
+                0.7071066498756409
+            ],
+            "position": [
+                1.9772304748535157,
+                0.05616197891235352,
+                3.204221859741211
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine10",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -6.743495646333031e-07,
+                0.7071069478988647,
+                6.743495646333031e-07,
+                0.7071066498756409
+            ],
+            "position": [
+                1.9772304748535157,
+                0.05616197891235352,
+                4.301501976013184
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine11",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                -6.743495646333031e-07,
+                0.7071069478988647,
+                6.743495646333031e-07,
+                0.7071066498756409
+            ],
+            "position": [
+                1.9772304748535157,
+                0.05616197891235352,
+                5.398782092285156
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine5",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                -4.922626853942871,
+                0.05616197891235352,
+                5.398782092285156
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine4",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                -4.922626853942871,
+                0.05616197891235352,
+                4.301501976013184
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine3",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                -4.922626853942871,
+                0.05616197891235352,
+                3.204221859741211
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine2",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                -4.922626853942871,
+                0.05616197891235352,
+                2.10694203414917
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "ArcadeMachine1",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                -4.922626853942871,
+                0.05616197891235352,
+                1.0096620632171631
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    },
+    {
+        "name": "bluedeskchair",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                -0.7071065306663513,
+                0.0,
+                0.7071070075035095
+            ],
+            "position": [
+                12.738824761962892,
+                0.048791721117496495,
+                -0.6895923557281495
+            ],
+            "render.collada": "/media/vrcade/models/furniture/bluedeskchair.dae",
+            "scale": [
+                0.5486399854660035,
+                0.5486399854660035,
+                0.5486399854660035
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "officedesk",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                13.87764129638672,
+                0.07770506801605225,
+                -0.44539490661621095
+            ],
+            "render.collada": "/media/vrcade/models/furniture/desk_v2.dae",
+            "scale": [
+                0.7741919883728028,
+                0.7741919883728028,
+                0.7741919883728028
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "airhockey-combined",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                -0.7071070671081543,
+                0.0,
+                0.7071064710617065
+            ],
+            "position": [
+                8.50190605316162,
+                0.05821621398925782,
+                3.6029242675781252
+            ],
+            "render.collada": "/media/vrcade/models/airhockey/airhockey.dae",
+            "scale": [
+                0.48768000726699834,
+                0.48768000726699834,
+                0.48768000726699834
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "change-machine-high",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                2.5183355278015136,
+                0.05821621398925782,
+                -0.8915851135253907
+            ],
+            "render.collada": "/media/vrcade/models/change-machine/change-machine.dae",
+            "scale": [
+                0.4267199927330017,
+                0.4267199927330017,
+                0.4267199927330017
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "ArcadeMachine0",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                6.181740275224001e-08,
+                0.7071065306663513,
+                6.181707590258156e-08,
+                -0.7071070075035095
+            ],
+            "position": [
+                -4.922626853942871,
+                0.05616197891235352,
+                -0.08761790771484375
+            ],
+            "scale": [
+                0.4876876376152039,
+                0.4876876376152039,
+                0.4876876376152039
+            ],
+            "type": "emulatedmachine"
+        },
+        "type": "emulatedmachine"
+    }
+]
