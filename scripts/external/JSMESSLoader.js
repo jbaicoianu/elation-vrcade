@@ -45,7 +45,6 @@ JSMESSLoader.prototype._runReadies = function() {
   };
 };
 JSMESSLoader.prototype._readyCheck = function() {
-console.log('ready check', this);
   if (this.running) {
     this._runReadies();
   } else {

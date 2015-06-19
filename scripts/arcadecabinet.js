@@ -4,6 +4,7 @@ elation.require(['engine.things.generic', 'vrcade.external.JSMESSLoader', 'vrcad
       this.defineProperties({
         gamename: { type: 'string', default: 'pacman' },
         loader: { type: 'string', default: 'messloader' },
+        systemname: { type: 'string' },
         working: { type: 'bool', default: true },
       });
 
@@ -33,7 +34,10 @@ elation.require(['engine.things.generic', 'vrcade.external.JSMESSLoader', 'vrcad
         } else {
           setTimeout(function() {
             var gamename = this.properties.gamename,
-                systemname = 'mess' + this.properties.gamename;
+                systemname = elation.utils.any(this.properties.systemname, 'mess' + gamename),
+                zipname = elation.utils.any(this.properties.zipname, gamename + '.zip');
+
+console.log('gamename', gamename, 'systemname', systemname, 'zipname', zipname);
 
             var messargs = { 
               webroot: '/media/vrcade/games/' + gamename + '/',
@@ -42,7 +46,7 @@ elation.require(['engine.things.generic', 'vrcade.external.JSMESSLoader', 'vrcad
               useSound: true,
               systemname: systemname,
               gamename: '',
-              bios_filenames: [gamename + '.zip'],
+              bios_filenames: [zipname],
               messargs: [gamename,"-verbose","-rompath",".","-window","-resolution","448x576","-nokeepaspect","-autoframeskip"]
             };
             this.jsmess = new JSMESSLoader(messargs);

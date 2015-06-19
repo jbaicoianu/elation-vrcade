@@ -7,7 +7,7 @@ var context = null;
 var gain_node = null;
 var buffer_insert_point = null;
 var pending_buffers = [];
-var HEAP16 = window.HEAP16 || false;
+var HEAP16 = (typeof window != 'undefined' ? window.HEAP16 : false) || false;
 
 var numChannels = 2; // constant in jsmess
 var sampleScale = 32766;

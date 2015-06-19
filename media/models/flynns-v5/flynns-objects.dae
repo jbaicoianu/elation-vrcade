@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.74.0 commit date:2015-03-24, commit time:15:31, hash:8804e64</authoring_tool>
+    </contributor>
+    <created>2015-03-28T21:59:58</created>
+    <modified>2015-03-28T21:59:58</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="combined" name="combined">
+      <node id="joust-high_003" name="joust-high_003" type="NODE">
+        <matrix sid="transform">-1.07449e-6 -1.600025 -9.02829e-7 -6.127886 1.600025 -1.07449e-6 -9.02831e-7 -0.2874603 9.0283e-7 -9.0283e-7 1.600025 0.1842585 0 0 0 1</matrix>
+      </node>
+      <node id="galaga-high_003" name="galaga-high_003" type="NODE">
+        <matrix sid="transform">-1.07449e-6 -1.600025 -9.02829e-7 -6.127886 1.600025 -1.07449e-6 -9.02831e-7 16.16994 9.0283e-7 -9.0283e-7 1.600025 0.1842585 0 0 0 1</matrix>
+      </node>
+      <node id="moon-patrol-high_007" name="moon-patrol-high_007" type="NODE">
+        <matrix sid="transform">-1.02363e-6 1.600025 0 -10.16197 -1.600025 -1.02363e-6 0 16.29736 0 0 1.600025 0.00962925 0 0 0 1</matrix>
+      </node>
+      <node id="pacman-high_007" name="pacman-high_007" type="NODE">
+        <matrix sid="transform">-1.02363e-6 1.600025 0 -10.16197 -1.600025 -1.02363e-6 0 -0.1600342 0 0 1.600025 0.00962925 0 0 0 1</matrix>
+      </node>
+      <node id="change-machine-high" name="change-machine-high" type="NODE">
+        <matrix sid="transform">1.25 0 0 -7.755283 0 1.25 0 -2.925148 0 0 1.25 0.1909981 0 0 0 1</matrix>
+      </node>
+      <node id="airhockey-combined" name="airhockey-combined" type="NODE">
+        <matrix sid="transform">-1.40508e-6 -1.6 0 -27.89339 1.6 -1.40508e-6 0 11.82062 0 0 1.6 0.1909981 0 0 0 1</matrix>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#combined"/>
+  </scene>
+</COLLADA>

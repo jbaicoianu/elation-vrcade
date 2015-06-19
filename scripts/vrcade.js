@@ -1,7 +1,7 @@
 elation.require([
     "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.toggle", "ui.list", "ui.label",
     "engine.engine", "engine.external.three.tween", "engine.things.camera", "engine.things.menu",
-    "vrcade.vrcadeplayer", "vrcade.arcadecabinet"
+    "vrcade.vrcadeplayer", "vrcade.arcadecabinet", "vrcade.arcademachine", "vrcade.arcadeposter"
   ], function() {
 
   //elation.template.add('vrcade.intro', '<div data-elation-component="ui.spinner" data-elation-args.label="loading" data-elation-args.type="dark"></div>');
@@ -17,7 +17,7 @@ elation.require([
       });
     }
     this.initEngine = function() {
-      this.engine = elation.engine.create("vrcade", ["physics", "controls", "sound", "ai", "world", "render"], elation.bind(this, this.startEngine));
+      this.engine = elation.engine.create("vrcade", ["physics", "sound", "ai", "world", "render", "controls"], elation.bind(this, this.startEngine));
     }
     this.startEngine = function(engine) {
       elation.require(['engine.things.light', 'engine.things.terrain', 'vrcade.arcadecabinet'], elation.bind(this, function() {
@@ -38,29 +38,6 @@ elation.require([
   });
 
   elation.component.add('engine.things.vrcade', function() {
-    this.gamegroups = [
-      {
-        position: [10,0,0],
-        rotation: [0, Math.PI/2, 0],
-        //scale: [1.5, 1.5, 1.5],
-        games: [
-          { name: 'pacman', model: 'pacman', gamename: 'pacman', working: true },
-          { name: 'galaxian', model: 'galaga', gamename: 'galaxian', working: false },
-          { name: 'moonpatrol', model: 'moon-patrol', gamename: 'mpatrol', working: false },
-          { name: 'joust', model: 'joust', gamename: 'joust', working: false },
-        ]
-      },
-/*
-      {
-        position: [10,0,10],
-        //scale: [1.5, 1.5, 1.5],
-        games: [ 
-          { name: 'stargate', model: 'stargate', gamename: 'stargate' },
-          { name: 'joust', model: 'joust', gamename: 'joust' },
-        ]
-      }
-*/
-    ];
     this.gamenum = 0;
     this.cabinets = {};
     this.started = false;
@@ -90,20 +67,35 @@ elation.require([
       this.engine.systems.world.setFog(1, 50, 0x111111);
       this.engine.systems.world.setSky('/media/vrcade/textures/skybox', 'jpg', ['p', 'n']);
 
-      this.player = this.spawn('vrcadeplayer', 'player', { "position":[0,2.4,0], mass: 50 });
+      this.lights = this.create_lights();
+      elation.engine.geometries.loadMeshFromURL('cabinet-default', '/media/vrcade/models/cabinet/cabinet.dae');
+
+
+      var playerpos = [-16.941,0,-24.576];
+      //var playerpos = [0,2.4,0];
+
+      this.player = this.spawn('vrcadeplayer', 'player', { "position":playerpos, startposition: playerpos, "orientation": [0, 0.93664, 0, -0.35030], mass: 20, height: 2 });
       this.setview(this.view);
+
+      this.vrcadesign = this.spawn('generic', 'vrcadesign', {
+        "position": [0,0,0],
+        "render.collada": "/media/vrcade/models/flynns-v5/flynns-sign.dae",
+        "scale": [.3048, .3048, .3048]
+      });
 
       this.showMenu();
     }
     this.create_lights = function() {
       var lights = [];
+/*
       lights.push(this.spawn('light', 'sun', {
-        "position":[50,30,30],
+        "position":[50,30,-30],
         "persist":false,
         "type":"directional",
         "intensity":0.6,
         //"velocity":[0,0,0.05]
       }));
+*/
       /*
       lights.push(this.spawn('light', 'sun2', {
         "position":[-50,-30,-30],
@@ -113,33 +105,177 @@ elation.require([
         //"velocity":[0,0,0.05]
       }));
       */
+      lights.push(this.spawn('light', 'point01', {
+        "position":[-10,20,10],
+        "persist":false,
+        "type":"point",
+        "intensity": .4,
+        "color":0xffffff,
+      }));
+      lights.push(this.spawn('light', 'point02', {
+        "position":[20,10,32],
+        "persist":false,
+        "type":"point",
+        "intensity": .4,
+        "color":0xcccccc,
+      }));
+      lights.push(this.spawn('light', 'point03', {
+        "position":[0,10,-30],
+        "persist":false,
+        "type":"point",
+        "intensity": .4,
+        "color":0xcccccc,
+      }));
       lights.push(this.spawn('light', 'ambient', {
         "position":[0,0,0],
         "persist":false,
         "type":"ambient",
-        "color":0xcccccc,
+        "color":0xffffff,
       }));
 
       return lights;
     }
+    this.load_games = function() {
+      this.gamepack = '/media/vrcade/gamepack/NewRetroArcade/Content';
+      this.engine.systems.world.loadSceneFromURL('/media/vrcade/models/flynns-v5/vrcade-things.json', elation.bind(this, function() {
+        elation.net.get(this.gamepack + '/ArcadeMachines.xml', null, { onload: this.process_games.bind(this) });
+        elation.net.get(this.gamepack + '/ArcadePosters.xml', null, { onload: this.process_posters.bind(this) });
+      }));
+    }
+    this.process_games = function(d) {
+      var xmldoc = d.target.responseXML;
+      var expr = xmldoc.evaluate('//ArcadeMachines', xmldoc, null, XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
+      var container = expr.iterateNext();
+
+      if (container) {
+        var games = container.children;
+        for (var i = 0; i < games.length; i++) {
+          var name = games[i].nodeName;
+          var foo = elation.utils.parseXML(games[i]);
+          var gamedata = foo[name]._children;
+          var machine = elation.engine.things.arcademachine(name);
+          if (machine) {
+console.log(name, gamedata);
+            if (gamedata.ArtFrontPanel && gamedata.ArtFrontPanel.Texture) {
+              var frontpath = this.gamepack + '/Arcades/' + gamedata.ArtFrontPanel.Texture.replace('.dds', '.png');
+              //console.log('do FRONT data', name, frontpath);
+              machine.setFrontTexture(frontpath);
+            }
+            if (gamedata.ArtSidePanel && gamedata.ArtSidePanel.Texture) {
+              var sidepath = this.gamepack + '/Arcades/' + gamedata.ArtSidePanel.Texture.replace('.dds', '.png');
+              //console.log('do SIDE data', name, sidepath);
+              machine.setSideTexture(sidepath);
+            }
+            if (gamedata.Game) {
+              var gamename = gamedata.Game._content.substr(0, gamedata.Game._content.indexOf('.'));
+              machine.setGame(gamename)
+            }
+            if (gamedata.GameImage) {
+              var screenpath = this.gamepack + '/Roms/' + gamedata.GameImage._content;
+              //console.log('do SCREEN data', name, screenpath);
+              machine.setDefaultScreenTexture(screenpath);
+            }
+          } else {
+            console.log("couldn't find machine:", name);
+          }
+        }
+        this.refresh();
+      }
+    }
+    this.process_posters = function(d) {
+      var xmldoc = d.target.responseXML;
+      var expr = xmldoc.evaluate('//ArcadePosters', xmldoc, null, XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
+      var container = expr.iterateNext();
+      if (container) {
+        var posters = container.children;
+        for (var i = 0; i < posters.length; i++) {
+          var name = posters[i].nodeName;
+          var posterdata = elation.utils.parseXML(posters[i])[name];
+          var poster = elation.engine.things.arcadeposter(name);
+          if (poster) {
+            if (posterdata.Texture) {
+              var posterfile = this.gamepack + '/Posters/' + posterdata.Texture.replace('.dds', '.png');
+              //console.log('do POSTER data', name, posterfile);
+              poster.setPosterTexture(posterfile);
+            }
+          } else {
+            console.log("couldn't find poster:", name);
+          }
+        }
+        this.refresh();
+      }
+    }
     this.create_games = function() {
       this.gamesloading = 0;
       var groups = [];
+      this.load_games();
+      return;
       for (var i = 0; i < this.gamegroups.length; i++) {
         var group = this.spawn('vrcadegamegroup', 'group_' + i, this.gamegroups[i]);
         elation.events.add(group, 'thing_load', elation.bind(this, this.handlegroupload));
         groups.push(this);
       }
 
-/*
       this.spawn('generic', 'changemachine', {
-        'render.collada': '/media/vrcade/models/pacman/pacman.dae',
-        'position': [0,0,0],
+        'render.collada': '/media/vrcade/models/change-machine/change-machine.dae',
+        'position': [-2.5,0,-5],
         'orientation': [0,1,0,0],
         //scale: [1.4, 1.4, 1.4],
-        //scale: [.3048,.3048,.3048],
+        scale: [.45,.45,.45],
       });
-*/
+      this.officedesk = this.spawn('generic', 'officedesk', {
+        "position": [3,0,3],
+        "render.collada": "/media/vrcade/models/furniture/desk_v2.dae",
+        "scale": [.9,.9,.9]
+      });
+      this.officechair = this.spawn('generic', 'officechair', {
+        "position": [2,0,3],
+        "render.collada": "/media/vrcade/models/furniture/bluedeskchair.dae",
+        orientation: [0, -.7071, 0, .7071],
+        "scale": [.7,.7,.7]
+      });
+
+      var deskstuff = this.spawn('vrcadegamegroup', 'group_' + 'desk', 
+      {
+        position: [2.8,1.7,2],
+        orientation: [0, .7071, 0, .7071],
+        //scale: [.8,.8,.8],
+        games: [
+          { 
+            name: 'dos622',
+            emutype: 'emulatedmachine',
+            model: 'ibmpc',
+            gamename: 'dos622',
+            systemname: 'dosbox',
+            working: true,
+            position: [0,0,0],
+            executableargs: ['-conf', '/mnt/dosbox.conf', '-c', 'imgmount c /mnt/drivec/drivec.img', '-c', 'imgmount d /mnt/drived/drived-small.img -size 512,63,16,202','-c', 'boot -l c'],
+            mnt: { 
+              '/drivec': [ 'zip', '/media/vrcade/systems/ibmpc/msdos622-drivec.zip'] 
+            },
+          },
+        ]
+      });
+      var deskstuff2 = this.spawn('vrcadegamegroup', 'group_' + 'desk2', 
+      {
+        position: [2,-.3,3],
+        orientation: [0, .7071, 0, .7071],
+        games: [
+          { 
+            name: 'ti85',
+            emutype: 'emulatedmachine',
+            model: 'ti85',
+            gamename: 'ti85',
+            systemname: 'messti85',
+            working: true,
+            position: [0,2.0,0],
+            executableargs: ['-conf', '/mnt/dosbox.conf', '-c', 'imgmount c /mnt/drivec/drivec.img', '-c', 'imgmount d /mnt/drived/drived-small.img -size 512,63,16,202','-c', 'boot -l c'],
+            mnt: { 
+              '/drivec': [ 'zip', '/media/vrcade/systems/ibmpc/msdos622-drivec.zip'] 
+            },
+          }
+        ]
+      });
     }
     this.setview = function(view) {
       this.view = view;
@@ -149,7 +285,7 @@ elation.require([
     }
     this.showMenu = function() {
       if (!this.menu) {
-        this.menu = this.player.spawn('menu', null, { 
+        this.menu = this.player.camera.spawn('menu', null, { 
           position: [0,0,-2],
           items: [
             { 
@@ -186,7 +322,7 @@ elation.require([
           }
         });
       } else {
-        this.player.add(this.menu);
+        this.player.camera.add(this.menu);
       }
       this.player.disable();
       this.menu.enable();
@@ -194,7 +330,7 @@ elation.require([
       this.refresh();
     }
     this.hideMenu = function() {
-      this.player.remove(this.menu);
+      this.player.camera.remove(this.menu);
       if (this.configmenu) this.configmenu.hide();
       if (this.loaded) {
         this.player.enable();
@@ -236,8 +372,6 @@ elation.require([
       }
     }
     this.loadGame = function() {
-      this.lights = this.create_lights();
-
       this.collidermesh = this.spawn('generic', 'collider', {
         "render.collada": "/media/vrcade/models/flynns-v5/flynns-collider.dae",
         "scale": [.3048, .3048, .3048]
@@ -316,111 +450,7 @@ elation.require([
     }
     this.configureOptions = function() {
       if (!this.configmenu) {
-        var configpanel = elation.ui.panel({
-          orientation: 'vertical'
-        });
-
-        /* Control Settings */
-        var controlpanel = elation.ui.panel({
-          orientation: 'vertical'
-        });
-        var label = elation.ui.labeldivider({
-          append: controlpanel, 
-          label: 'Mouse Settings'
-        });
-        var sensitivity = elation.ui.slider({
-          append: controlpanel,
-          min: 0,
-          max: 500,
-          snap: 1,
-          handles: [
-            {
-              name: 'handle_one',
-              value: this.engine.systems.controls.settings.mouse.sensitivity,
-              labelprefix: 'Sensitivity:',
-              bindvar: [this.engine.systems.controls.settings.mouse, 'sensitivity']
-            }
-          ]
-        });
-        var inverty = elation.ui.toggle({
-          label: 'Invert Y',
-          append: controlpanel,
-          bindvar: [this.engine.systems.controls.settings.mouse, 'invertY']
-        });
-
-        label = elation.ui.labeldivider({
-          append: controlpanel, 
-          label: 'Gamepad Settings'
-        });
-        var gamepads = this.engine.systems.controls.getGamepads();
-        if (gamepads.length == 0) {
-          elation.ui.content({ append: controlpanel, content: 'No gamepads connected'});
-        } else {
-          elation.ui.list({ append: controlpanel, items: gamepads, attrs: { label: 'id'}});
-        }
-        label = elation.ui.labeldivider({
-          append: controlpanel, 
-          label: 'Keyboard Settings'
-        });
-/*
-        var turnspeed = elation.ui.slider({
-          append: controlpanel,
-          min: 0,
-          max: 10,
-          snap: .1,
-          handles: [
-            {
-              name: 'handle_two',
-              value: this.player.turnSpeed,
-              labelprefix: 'Turn Speed:',
-              bindvar: [this.player, 'turnSpeed']
-            }
-          ]
-        });
-*/
-        elation.ui.content({ append: controlpanel, content: '(TODO - build keybinding UI)'});
-
-        /* Video Settings */
-        var videopanel = elation.ui.panel({
-          orientation: 'vertical'
-        });
-        var oculus = elation.ui.toggle({
-          label: 'Oculus Rift',
-          append: videopanel,
-          events: { toggle: elation.bind(this, this.toggleVR) }
-        });
-        var fullscreen = elation.ui.toggle({
-          label: 'Fullscreen',
-          append: videopanel,
-          events: { toggle: elation.bind(this, this.toggleFullscreen) }
-        });
-        this.view.scale = 100;
-        var scale = elation.ui.slider({
-          append: videopanel,
-          min: 1,
-          max: 200,
-          snap: 1,
-          handles: [
-            {
-              name: 'handle_one_scale',
-              value: this.view.scale,
-              labelprefix: 'View scale:',
-              bindvar: [this.view, 'scale']
-            }
-          ],
-          events: { ui_slider_change: elation.bind(this.view.rendersystem, this.view.rendersystem.setdirty) }
-        });
-
-        var configtabs = elation.ui.tabbedcontent({
-          append: configpanel,
-          items: {
-            controls: { label: 'Controls', content: controlpanel },
-            video: { label: 'Video', content: videopanel },
-            audio: { label: 'Audio', disabled: true },
-            network: { label: 'Network', disabled: true },
-          }
-        });
-
+        var configpanel = elation.engine.configuration({engine: this.engine, view: this.view});
         this.configmenu = elation.ui.window({
           append: document.body,
           classname: 'vrcade_config',
@@ -492,14 +522,18 @@ elation.require([
         var gameargs = {
           'name': name,
           'gamename': this.games[i].gamename,
+          'executableargs': this.games[i].executableargs,
           'working': this.games[i].working,
           'loader': 'messloader',
+          'systemname': this.games[i].systemname,
+          'mnt': this.games[i].mnt,
           //'render.gltf': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.json',
           'render.collada': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.dae',
           'scale': [scale, scale, scale],
           mass: 0
         };
-        this.cabinets[name] = this.spawn('arcadecabinet', name, gameargs);
+        var emutype = this.games[i].emutype || 'arcadecabinet';
+        this.cabinets[name] = this.spawn(emutype, name, gameargs);
         this.gamesloading++;
         elation.events.add(this.cabinets[name], 'thing_load', elation.bind(this, this.handlethingload));
       }
@@ -512,6 +546,9 @@ elation.require([
         for (var i = 0; i < this.games.length; i++) {
           var cabinet = this.cabinets[this.games[i].name];
           cabinet.properties.position.set(radius * Math.cos(gamespacing * i), 0, radius * Math.sin(gamespacing * i));
+          if (this.games[i].position) {
+            cabinet.properties.position.add(this.games[i].position);
+          }
           cabinet.properties.orientation.setFromEuler(new THREE.Euler(0, -gamespacing * i + Math.PI/2, 0));
           cabinet.refresh();
         }
@@ -521,6 +558,9 @@ elation.require([
         for (var i = 0; i < this.games.length; i++) {
           var cabinet = this.cabinets[this.games[i].name];
           cabinet.properties.position.set((totalcabwidth * i) - (totalwidth / 2), 0, 0);
+          if (this.games[i].position) {
+            cabinet.properties.position.add(new THREE.Vector3().fromArray(this.games[i].position));
+          }
         }
       }
 

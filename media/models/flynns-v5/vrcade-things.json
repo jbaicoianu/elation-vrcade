@@ -1,5 +1,30 @@
 [
     {
+        "name": "dumpster",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                -0.7071065902709961,
+                0.0,
+                0.7071069478988647
+            ],
+            "position": [
+                15.434046295166016,
+                -0.16746208934783938,
+                -1.4907489772796632
+            ],
+            "render.collada": "/media/vrcade/models/dumpster/dumpster.dae",
+            "scale": [
+                0.9290304296493531,
+                0.9290304296493531,
+                0.9290304296493531
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
         "name": "PosterSNESWallLeft",
         "properties": {
             "mass": 1.0,
@@ -330,14 +355,14 @@
             "mass": 1.0,
             "orientation": [
                 3.0908619663705394e-08,
-                0.7071067690849304,
-                -3.0908619663705394e-08,
-                0.7071067690849304
+                -0.7071067690849304,
+                3.0908619663705394e-08,
+                0.7071068286895752
             ],
             "position": [
-                13.073281091308594,
-                1.5367332344055176,
-                0.1951241545200348
+                9.129100909423828,
+                5.208398364257813,
+                10.354928411865234
             ],
             "render.collada": "/media/vrcade/models/ti85/ti85.dae",
             "scale": [
@@ -354,15 +379,15 @@
         "properties": {
             "mass": 1.0,
             "orientation": [
-                -1.3510587378476693e-15,
-                0.7071067690849304,
-                -1.3510587378476693e-15,
-                0.7071067690849304
+                2.3040463759116392e-07,
+                0.7071068286895752,
+                2.3040463759116392e-07,
+                -0.7071067690849304
             ],
             "position": [
-                13.653227087402344,
-                1.5416932514190675,
-                -0.8181348003387452
+                8.549154913330078,
+                5.213358526611328,
+                11.368187493896485
             ],
             "render.collada": "/media/vrcade/models/ibmpc/ibmpc.dae",
             "scale": [
@@ -394,9 +419,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine23",
@@ -418,9 +443,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine22",
@@ -442,9 +467,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine21",
@@ -466,9 +491,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine20",
@@ -490,9 +515,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine19",
@@ -514,9 +539,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine18",
@@ -538,9 +563,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine12",
@@ -562,9 +587,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine13",
@@ -586,9 +611,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine14",
@@ -610,9 +635,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine16",
@@ -634,9 +659,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine17",
@@ -658,9 +683,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine6",
@@ -682,9 +707,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine7",
@@ -706,9 +731,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine8",
@@ -730,9 +755,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine9",
@@ -754,9 +779,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine10",
@@ -778,9 +803,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine11",
@@ -802,9 +827,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine5",
@@ -826,9 +851,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine4",
@@ -850,9 +875,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine3",
@@ -874,9 +899,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine2",
@@ -898,9 +923,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "ArcadeMachine1",
@@ -922,9 +947,9 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
     },
     {
         "name": "bluedeskchair",
@@ -932,14 +957,14 @@
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071065306663513,
+                0.7071067690849304,
                 0.0,
-                0.7071070075035095
+                0.7071067690849304
             ],
             "position": [
-                12.738824761962892,
-                0.048791721117496495,
-                -0.6895923557281495
+                9.426411831665039,
+                3.720457209777832,
+                11.542160595703125
             ],
             "render.collada": "/media/vrcade/models/furniture/bluedeskchair.dae",
             "scale": [
@@ -962,9 +987,9 @@
                 1.0
             ],
             "position": [
-                13.87764129638672,
-                0.07770506801605225,
-                -0.44539490661621095
+                9.079906237792969,
+                3.749370561218262,
+                11.007029306030274
             ],
             "render.collada": "/media/vrcade/models/furniture/desk_v2.dae",
             "scale": [
@@ -1046,8 +1071,56 @@
                 0.4876876376152039,
                 0.4876876376152039
             ],
-            "type": "emulatedmachine"
+            "type": "arcademachine"
         },
-        "type": "emulatedmachine"
+        "type": "arcademachine"
+    },
+    {
+        "name": "wall-back-door-bottom",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                14.279862094116211,
+                1.5239591594696045,
+                1.3600727966308594
+            ],
+            "scale": [
+                0.3048,
+                0.3048,
+                0.3048
+            ],
+            "type": "door"
+        },
+        "type": "door"
+    },
+    {
+        "name": "wall-back-door-office",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                14.1769381439209,
+                5.258886561584473,
+                9.736063861083984
+            ],
+            "scale": [
+                0.3048,
+                0.3048,
+                0.3048
+            ],
+            "type": "door"
+        },
+        "type": "door"
     }
 ]
