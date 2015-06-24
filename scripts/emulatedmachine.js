@@ -1,4 +1,4 @@
-elation.require(['engine.things.generic', 'engine.geometries', 'vrcade.external.browserfs', 'vrcade.external.EventDispatcher', 'vrcade.external.EMLoader'], function() {
+elation.require(['engine.things.generic', 'engine.geometries', 'vrcade.external.browserfs', 'vrcade.external.EMLoader'], function() {
 
   elation.component.add('engine.things.emulatedmachine', function() {
     this.postinit = function() {
