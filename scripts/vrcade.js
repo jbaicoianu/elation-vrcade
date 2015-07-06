@@ -157,12 +157,10 @@ elation.require([
           if (machine) {
             if (gamedata.ArtFrontPanel && gamedata.ArtFrontPanel.Texture) {
               var frontpath = this.gamepack + '/Arcades/' + gamedata.ArtFrontPanel.Texture.replace('.dds', '.png');
-              //console.log('do FRONT data', name, frontpath);
               machine.setFrontTexture(frontpath);
             }
             if (gamedata.ArtSidePanel && gamedata.ArtSidePanel.Texture) {
               var sidepath = this.gamepack + '/Arcades/' + gamedata.ArtSidePanel.Texture.replace('.dds', '.png');
-              //console.log('do SIDE data', name, sidepath);
               machine.setSideTexture(sidepath);
             }
             if (gamedata.Game) {
@@ -171,7 +169,6 @@ elation.require([
             }
             if (gamedata.GameImage) {
               var screenpath = this.gamepack + '/Roms/' + gamedata.GameImage._content;
-              //console.log('do SCREEN data', name, screenpath);
               machine.setDefaultScreenTexture(screenpath);
             }
           } else {
@@ -194,7 +191,6 @@ elation.require([
           if (poster) {
             if (posterdata.Texture) {
               var posterfile = this.gamepack + '/Posters/' + posterdata.Texture.replace('.dds', '.png');
-              //console.log('do POSTER data', name, posterfile);
               poster.setPosterTexture(posterfile);
             }
           } else {
