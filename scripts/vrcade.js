@@ -155,7 +155,6 @@ elation.require([
           var gamedata = foo[name]._children;
           var machine = elation.engine.things.arcademachine(name);
           if (machine) {
-console.log(name, gamedata);
             if (gamedata.ArtFrontPanel && gamedata.ArtFrontPanel.Texture) {
               var frontpath = this.gamepack + '/Arcades/' + gamedata.ArtFrontPanel.Texture.replace('.dds', '.png');
               //console.log('do FRONT data', name, frontpath);
@@ -204,78 +203,6 @@ console.log(name, gamedata);
         }
         this.refresh();
       }
-    }
-    this.create_games = function() {
-      this.gamesloading = 0;
-      var groups = [];
-      this.load_games();
-      return;
-      for (var i = 0; i < this.gamegroups.length; i++) {
-        var group = this.spawn('vrcadegamegroup', 'group_' + i, this.gamegroups[i]);
-        elation.events.add(group, 'thing_load', elation.bind(this, this.handlegroupload));
-        groups.push(this);
-      }
-
-      this.spawn('generic', 'changemachine', {
-        'render.collada': '/media/vrcade/models/change-machine/change-machine.dae',
-        'position': [-2.5,0,-5],
-        'orientation': [0,1,0,0],
-        //scale: [1.4, 1.4, 1.4],
-        scale: [.45,.45,.45],
-      });
-      this.officedesk = this.spawn('generic', 'officedesk', {
-        "position": [3,0,3],
-        "render.collada": "/media/vrcade/models/furniture/desk_v2.dae",
-        "scale": [.9,.9,.9]
-      });
-      this.officechair = this.spawn('generic', 'officechair', {
-        "position": [2,0,3],
-        "render.collada": "/media/vrcade/models/furniture/bluedeskchair.dae",
-        orientation: [0, -.7071, 0, .7071],
-        "scale": [.7,.7,.7]
-      });
-
-      var deskstuff = this.spawn('vrcadegamegroup', 'group_' + 'desk', 
-      {
-        position: [2.8,1.7,2],
-        orientation: [0, .7071, 0, .7071],
-        //scale: [.8,.8,.8],
-        games: [
-          { 
-            name: 'dos622',
-            emutype: 'emulatedmachine',
-            model: 'ibmpc',
-            gamename: 'dos622',
-            systemname: 'dosbox',
-            working: true,
-            position: [0,0,0],
-            executableargs: ['-conf', '/mnt/dosbox.conf', '-c', 'imgmount c /mnt/drivec/drivec.img', '-c', 'imgmount d /mnt/drived/drived-small.img -size 512,63,16,202','-c', 'boot -l c'],
-            mnt: { 
-              '/drivec': [ 'zip', '/media/vrcade/systems/ibmpc/msdos622-drivec.zip'] 
-            },
-          },
-        ]
-      });
-      var deskstuff2 = this.spawn('vrcadegamegroup', 'group_' + 'desk2', 
-      {
-        position: [2,-.3,3],
-        orientation: [0, .7071, 0, .7071],
-        games: [
-          { 
-            name: 'ti85',
-            emutype: 'emulatedmachine',
-            model: 'ti85',
-            gamename: 'ti85',
-            systemname: 'messti85',
-            working: true,
-            position: [0,2.0,0],
-            executableargs: ['-conf', '/mnt/dosbox.conf', '-c', 'imgmount c /mnt/drivec/drivec.img', '-c', 'imgmount d /mnt/drived/drived-small.img -size 512,63,16,202','-c', 'boot -l c'],
-            mnt: { 
-              '/drivec': [ 'zip', '/media/vrcade/systems/ibmpc/msdos622-drivec.zip'] 
-            },
-          }
-        ]
-      });
     }
     this.setview = function(view) {
       this.view = view;
@@ -391,7 +318,7 @@ console.log(name, gamedata);
         "scale": [.3048, .3048, .3048]
       });
 
-      elation.events.add(this.interior, 'thing_load', elation.bind(this, this.create_games));
+      elation.events.add(this.interior, 'thing_load', elation.bind(this, this.load_games));
     }
     this.loadTheater = function() {
       this.theater = this.spawn('generic', 'theater', {
@@ -493,102 +420,6 @@ console.log(name, gamedata);
           this.player.enable();
         }
       }
-    }
-  }, elation.engine.things.generic);
-
-  elation.component.add('engine.things.vrcadegamegroup', function() {
-    this.postinit = function() {
-      this.defineProperties({
-        'layout': { type: 'string', default: 'line' },
-        'games': { type: 'array', default: [] }
-      });
-      this.layout = this.properties.layout;
-      this.games = this.properties.games;
-    }
-    this.createObject3D = function() {
-      return new THREE.Object3D();
-    }
-    this.createChildren = function() {
-      this.create_games();
-    }
-    this.create_games = function() {
-      this.gamesloading = 0;
-      this.cabinets = {};
-
-      var scale = .5; //.3048;
-
-      for (var i = 0; i < this.games.length; i++) {
-        var name = this.games[i].name;
-        var gameargs = {
-          'name': name,
-          'gamename': this.games[i].gamename,
-          'executableargs': this.games[i].executableargs,
-          'working': this.games[i].working,
-          'loader': 'messloader',
-          'systemname': this.games[i].systemname,
-          'mnt': this.games[i].mnt,
-          //'render.gltf': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.json',
-          'render.collada': '/media/vrcade/models/' + this.games[i].model + '/' + this.games[i].model + '.dae',
-          'scale': [scale, scale, scale],
-          mass: 0
-        };
-        var emutype = this.games[i].emutype || 'arcadecabinet';
-        this.cabinets[name] = this.spawn(emutype, name, gameargs);
-        this.gamesloading++;
-        elation.events.add(this.cabinets[name], 'thing_load', elation.bind(this, this.handlethingload));
-      }
-
-      var cabwidth = 4.2 * scale;
-      var cabspacing = 0;
-      if (this.layout == 'circle') {
-        var gamespacing = -(2 * Math.PI) / this.games.length;
-        var radius = (cabwidth * this.games.length) / (2 * Math.PI) * .8;
-        for (var i = 0; i < this.games.length; i++) {
-          var cabinet = this.cabinets[this.games[i].name];
-          cabinet.properties.position.set(radius * Math.cos(gamespacing * i), 0, radius * Math.sin(gamespacing * i));
-          if (this.games[i].position) {
-            cabinet.properties.position.add(this.games[i].position);
-          }
-          cabinet.properties.orientation.setFromEuler(new THREE.Euler(0, -gamespacing * i + Math.PI/2, 0));
-          cabinet.refresh();
-        }
-      } else {
-        var totalcabwidth = cabwidth + cabspacing;
-        var totalwidth = totalcabwidth * this.games.length;
-        for (var i = 0; i < this.games.length; i++) {
-          var cabinet = this.cabinets[this.games[i].name];
-          cabinet.properties.position.set((totalcabwidth * i) - (totalwidth / 2), 0, 0);
-          if (this.games[i].position) {
-            cabinet.properties.position.add(new THREE.Vector3().fromArray(this.games[i].position));
-          }
-        }
-      }
-
-/*
-      setTimeout(elation.bind(this, function() {
-        this.setgame(this.gamenum);
-      }), 10);
-*/
-    }
-    this.handlethingload = function() {
-      this.refresh();
-      if (--this.gamesloading == 0) {
-        this.loadcomplete();
-      }
-    }
-    this.loadcomplete = function() {
-      //this.introwindow.hide();
-      setTimeout(elation.bind(this, function() {
-        elation.events.fire({type: 'thing_load', element: this});
-      }), 0);
-    }
-    this.getgameposition = function(n, offset) {
-      var game = this.games[n % this.games.length];
-      var cab = this.cabinets[game.name];
-      var gamepos = new THREE.Vector3();
-      if (offset) gamepos.copy(offset);
-      gamepos = cab.localToWorld(gamepos);
-      return gamepos;
     }
   }, elation.engine.things.generic);
 });
