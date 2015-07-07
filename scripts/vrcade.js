@@ -296,7 +296,8 @@ elation.require([
     }
     this.loadGame = function() {
       this.collidermesh = this.spawn('generic', 'collider', {
-        "render.collada": "/media/vrcade/models/flynns-v5/flynns-collider.dae",
+        //"render.collada": "/media/vrcade/models/flynns-v5/flynns-collider.dae",
+        "render.scene": "/media/vrcade/models/flynns-v5/flynns-collider.json",
         "scale": [.3048, .3048, .3048]
       });
       this.neighborhood = this.spawn('generic', 'neighborhood', {
