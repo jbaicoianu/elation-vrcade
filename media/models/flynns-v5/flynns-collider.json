@@ -1,0 +1,1671 @@
+{
+    "materials": [{
+        "color": 10724096,
+        "emissive": 0,
+        "type": "MeshLambertMaterial",
+        "depthWrite": true,
+        "depthTest": true,
+        "name": "*collider-box",
+        "vertexColors": false,
+        "uuid": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+        "ambient": 10724096,
+        "blending": "NormalBlending"
+    },{
+        "color": 10724096,
+        "emissive": 0,
+        "type": "MeshLambertMaterial",
+        "depthWrite": true,
+        "depthTest": true,
+        "name": "*collider-cylinder",
+        "vertexColors": false,
+        "uuid": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+        "ambient": 10724096,
+        "blending": "NormalBlending"
+    }],
+    "object": {
+        "uuid": "0D7BBDAC-9623-4730-B123-8621C54635FB",
+        "type": "Scene",
+        "matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+        "children": [{
+            "type": "Mesh",
+            "name": "collider-floor",
+            "uuid": "501C0070-F56A-37D3-BE9A-1AA62A9167D6",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,15,-3.38184,37.1904,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "0C996527-78C2-37EC-9E5E-5CC7F4FD9FEF"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.001",
+            "uuid": "DF25743C-4252-3FC6-A4A7-73D196B3550F",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,15,25.3582,37,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "51E3615E-2B80-3A2F-BEAE-2F0F6B0A59D0"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.002",
+            "uuid": "6E8C3255-814C-3884-9B26-AD5889AE979E",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,15,38.8582,37,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "FDF2617A-FDAD-3FB0-8379-5251765EF81D"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.003",
+            "uuid": "9134BB10-64CC-3129-BB85-F6B8856EB7D1",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,0,-6.38913,60,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "4E889588-4B29-362E-AAFC-F1779CB4DEC2"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.004",
+            "uuid": "2C0D981A-82A8-3282-8F04-8428428E3CFE",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,24.25,38.8582,-27.4821,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "4DD12C75-E7EF-3967-8E41-B7F2E3BC1AE8"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.005",
+            "uuid": "BB9C4EF3-D65A-3149-9A10-84E02AC8F764",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,24.25,25.3582,-27.3001,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "F18F4175-6D3B-3D09-96BF-BA3A74C0FAB0"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.006",
+            "uuid": "3DC1FB4D-7183-3743-B5D8-D87F485C2276",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,52.4998,-3.38184,20.8992,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "B547E0D5-5655-3F81-AE1C-D30C50A180D8"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.007",
+            "uuid": "995941F3-6034-3957-8B51-0204365B858D",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,45.5519,-4,-36.8041,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A7403AD2-F9A1-3C81-911C-0B9A8C4E7517"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.008",
+            "uuid": "D8472C8D-819E-3991-A2FD-528F405A7143",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,24.1086,-3.38184,-27.2819,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "473856B3-A1A2-3B73-9AA3-7EEF3B1B09D1"
+        },{
+            "type": "Mesh",
+            "name": "collider-floor.009",
+            "uuid": "DB665DE1-9912-3239-96B6-BC9CF78A6CF9",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,27,-4,52.1838,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "AA6389DE-9923-3D0B-AC40-5E92CB4631FF"
+        },{
+            "type": "Mesh",
+            "name": "collider-interior-supports-01",
+            "uuid": "E3DC5349-14A5-3432-A7E6-81AE97A5207F",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,8.16963,18.75,-1.775,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "9B8F34E5-0A60-3113-A56E-37E43C6A21BC"
+        },{
+            "type": "Mesh",
+            "name": "collider-interior-supports-02",
+            "uuid": "59C0BD80-344D-3C2B-935E-418FEFF51992",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,8.16963,19.25,18.2367,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "714922AC-388A-3391-B1A7-28814685D50E"
+        },{
+            "type": "Mesh",
+            "name": "collider-interior-supports-03",
+            "uuid": "F4B8BB37-6374-3717-875E-6A196D0960CF",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,8.16963,19.25,38.2367,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A22D3004-8A5C-371F-A470-2CBEE5CFE018"
+        },{
+            "type": "Mesh",
+            "name": "collider-light-interior.000",
+            "uuid": "853BE2B9-368B-3EB2-B5D8-DE3BA6AF8AB5",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,-14.2257,5.2,-13.0321,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "F0D87CF2-C3A7-376C-B032-DC0E7FAD495B"
+        },{
+            "type": "Mesh",
+            "name": "collider-light-interior.001",
+            "uuid": "28907976-1B4A-3F42-8965-3A587B291EE1",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,-13.8073,5.2,45.5862,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "F0EC72AF-D97F-33D4-A6A1-2B3CD00FB1D3"
+        },{
+            "type": "Mesh",
+            "name": "collider-light-interior.002",
+            "uuid": "0C0101DB-F68A-3DF6-B3D1-896C8FC2FC51",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,6.0842,5.2,-33.7922,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "3D53F129-ACF0-3B51-BFA2-74E67139A6A4"
+        },{
+            "type": "Mesh",
+            "name": "collider-light-interior.003",
+            "uuid": "93A33DBE-6BFE-38E6-8A4B-F40FB39F16D2",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,43.8048,5.2,-33.7922,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "C281BE12-5C30-3B28-BEA5-E8C42A4D842C"
+        },{
+            "type": "Mesh",
+            "name": "collider-light-interior.004",
+            "uuid": "58A43070-B69D-3431-A760-08ADA0366272",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,43.8048,5.2,-9.17098,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "4B30CEE3-5D0C-3CBE-8924-46FF8DB30134"
+        },{
+            "type": "Mesh",
+            "name": "collider-office",
+            "uuid": "9B9F318B-5656-3276-899C-F0E667EF1D65",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,26.0313,18.0453,22.9952,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "0D74A82C-D947-3EA3-BBBA-35FD9F3E8A5D"
+        },{
+            "type": "Mesh",
+            "name": "collider-office.001",
+            "uuid": "F6543E32-4495-302C-8A10-A7B4C17E6FF7",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,36.6288,11.5047,22.9952,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "AFB211BE-D7D4-31E0-8F0E-D4485F799EC0"
+        },{
+            "type": "Mesh",
+            "name": "collider-office.002",
+            "uuid": "F81260D6-CB4A-39E2-B662-48754ED81B6E",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,36,18.0453,-1.5,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "37B7F62D-946A-35C2-AF15-1EE1B0727703"
+        },{
+            "type": "Mesh",
+            "name": "collider-office.003",
+            "uuid": "2FDC4B28-CAF6-3DA0-B5A5-45D80A29FF7A",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,52,11.5047,34.4059,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "4FFEF9D5-5AFD-3746-B438-06A7BEF3D1D4"
+        },{
+            "type": "Mesh",
+            "name": "collider-office.004",
+            "uuid": "00DC9D87-D243-3C08-B726-C768B1E4FE6F",
+            "matrix": [-1,0,0,0,0,0.575515,0.817791,0,0,0.817791,-0.575515,0,52,5.52324,22.2055,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "CEB52BF9-28BD-3C3A-A213-D82A1349DFE9"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-back",
+            "uuid": "7438B624-FD69-3B59-B4A7-B1BCD852D357",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,15.0076,19.75,93.2048,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "926BFEE6-C81A-3C1F-9106-F7650DC40F6C"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-back.001",
+            "uuid": "BA1783A9-414E-3840-A2DC-7C4632DE1A49",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,15.0076,19.25,48.8703,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A7F96A3C-B8AC-33A9-9A61-D9276BDD676B"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-back.002",
+            "uuid": "31558C84-B81B-300E-9E31-CC992D79A02D",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,52.375,21.75,38.6,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "50F99163-A2AE-31A1-A74C-8B4719E10C70"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-back.003",
+            "uuid": "6DB035EE-D8BE-3A68-8431-88D7F4BB00D5",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,52.375,21.75,3.1,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "ABA75DE8-ED3F-3F1B-B4F6-71245578FBD6"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-back.004",
+            "uuid": "D17CB17E-BD9F-3545-A7F4-04347D76606D",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,58.125,21.75,20.875,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "DE186E1F-439D-3B75-B562-1D599AAF150D"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-back.005",
+            "uuid": "A9E0FCE9-912C-39E7-8BD3-7213D49BD4C6",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,47.125,41.9775,20.875,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "00DB422C-788D-34EA-8698-0DDCD492EE71"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-back.006",
+            "uuid": "06097304-B7B2-3A38-AE95-CABE4AF4AFCE",
+            "matrix": [0,1e-06,1,0,-1e-06,1,-1e-06,0,-1,-1e-06,0,0,52.5618,43.5,20.875,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "1DE3BECC-5962-38A2-884B-659B32435476"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-front",
+            "uuid": "B3AB7EDA-E376-38E1-B81B-6492C98EEADD",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,23.4644,19.75,-36.9174,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "142E7471-10FC-3F1B-8ECF-52ABD71B97B0"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-front.001",
+            "uuid": "F3E086A8-A99A-3271-B969-3140B83B68EA",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,2.93897,12.5,-30.2975,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "7BF2164B-0653-3C12-98E2-D5D4AAC088E3"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-front.002",
+            "uuid": "C0500CE9-100E-3C27-A679-7F9310DDCF51",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,-10.5722,12.5,-16.808,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "451E0FE4-79AE-3B1A-AA00-1401A97E3FE4"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-front.003",
+            "uuid": "EBFE3A81-A51A-3038-B3E0-10BB07D27904",
+            "matrix": [-0.707106,0,0.707107,0,0.707107,0,0.707106,0,0,1,0,0,-2.90918,5.10996,-18.855,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "FB2708FB-C615-3C7B-9894-5994890795AB"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-front.004",
+            "uuid": "AE92A6AE-AFA5-36ED-9175-DE42CD6885EE",
+            "matrix": [-0.25882,0,-0.965926,0,-0.965926,0,0.25882,0,0,1,0,0,1.30089,5.10996,-27.1841,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "20950643-3F2C-3990-8CC1-921E0A153381"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-front.005",
+            "uuid": "90CD0451-598E-3851-B207-9A73663171DB",
+            "matrix": [-0.707106,0,0.707107,0,0.707107,0,0.707106,0,0,1,0,0,-0.772006,15.202,-20.4245,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "3E51F710-002F-31EB-A516-5CF08AE21EAA"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-front.008",
+            "uuid": "E9C09CEF-36D6-35C8-A616-4A51B0D8DD51",
+            "matrix": [-0.707106,0,0.707107,0,0.707107,0,0.707106,0,0,1,0,0,-1.0041,17.6371,-20.7601,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "CE1DEE85-FF09-3DA8-B3E0-4CB1FE3F1846"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-left",
+            "uuid": "FF8557B6-6CE7-393F-B45B-AF8B0C845126",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,46.8349,5.5,-16,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "9FD789E0-82D0-31D7-B3BE-ABC11EB39FDB"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-left.001",
+            "uuid": "9B5A4CE1-CBA0-3521-AE8B-5C245E96DB38",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,46.8349,5.5,51.4233,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "1A04AA87-DA7A-3B14-9405-9A1882B7EDBB"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-left.002",
+            "uuid": "BD0F9C53-A8B4-30DC-A4F2-6755E2F853EA",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,46.8349,18.25,65.1329,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "B573B370-4610-3416-8B18-F587C0B76212"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-left.003",
+            "uuid": "AEA0CDA4-CA90-38A8-9498-49A3F9BAB247",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,46.8349,18.25,-2.9477,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A74560F1-2FC8-370C-92C4-78BE89787F22"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-left.004",
+            "uuid": "A1F973C7-9404-38BE-A6D7-F9D08FFEA06B",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,46.8349,32.375,27.9287,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "BE4C159D-4098-3FA4-AEE6-8DD23A1DD325"
+        },{
+            "type": "Mesh",
+            "name": "collider-wall-right",
+            "uuid": "105DD146-AFB5-3C02-BD05-EB8381D6E34C",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,-17.25,19.75,37.3563,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "304CB01D-DD05-3AB3-BB0F-77463521E6F5"
+        },{
+            "type": "Mesh",
+            "name": "Cube.002",
+            "uuid": "6A298CF0-087E-3A53-B34F-A23A322F7458",
+            "matrix": [-0.707107,0,0.707107,0,0.707107,0,0.707107,0,0,1,0,0,-5,48,-25,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "CDDB1799-945D-376D-9D57-0C5F404A241A"
+        },{
+            "type": "Mesh",
+            "name": "Cube.005",
+            "uuid": "027BAAE9-4285-3177-8920-8DB01F96A1E7",
+            "matrix": [-0.707107,0,0.707107,0,0.707107,0,0.707107,0,0,1,0,0,-11.1152,8.93944,-31.1044,1],
+            "visible": true,
+            "material": "D68CC594-EC1D-3B28-9B05-C424C55A5738",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "8E380099-B375-33B8-B7D4-C3A1D881DED9"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder",
+            "uuid": "5267BF4F-D758-3B25-9F2C-ED4EFC102E6F",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,2.5,19,-52.5,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "DCA24E96-9468-357E-AD01-3232BB5D898A"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.001",
+            "uuid": "9483CDF8-C829-3C35-9C17-8E4858034AB3",
+            "matrix": [-1,0,0,0,0,0.984808,0.173647,0,0,0.173647,-0.984808,0,2.5,39.4317,-61.5788,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "8471EA05-1861-3A72-A1AB-E2EFBD627B36"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.002",
+            "uuid": "96CEDE87-E453-3AC1-BD13-43A832D18E4D",
+            "matrix": [-1,0,0,0,0,0.984808,0.173647,0,0,0.173647,-0.984808,0,60,39.4317,-61.5788,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "B773068D-6342-38B8-A4C2-ED3E48CC166C"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.003",
+            "uuid": "115BD88E-1542-3A56-88C4-4A8ECD94991D",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,60,19,-52.5,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "FEE19EC5-E9F2-362C-8FD0-69436B27A566"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.004",
+            "uuid": "848ECDEF-B513-3C2C-B9BC-BB727F57DE7B",
+            "matrix": [1e-06,0,1,0,0.173647,0.984808,-0,0,-0.984808,0.173647,1e-06,0,-44.0995,39.4317,-12.4942,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A654CDED-509D-3097-B964-9014CEAC662B"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.005",
+            "uuid": "C46AE957-4C0C-3B1A-ADB4-631473FBDD84",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,-35.0208,19,-12.4942,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "4AE7DF3C-8CA4-3107-A5D5-3382D9701ECD"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.006",
+            "uuid": "C460F0AD-2BE9-35FE-B075-54D9831E4C63",
+            "matrix": [1e-06,0,1,0,1,0,-1e-06,0,0,1,0,0,-35.0208,19,50.0058,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "6AAD4B53-A71E-32D8-90F4-255D6F86D49C"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.007",
+            "uuid": "4A34CDB5-B3C4-3214-9924-B1C0C7EBA232",
+            "matrix": [1e-06,0,1,0,0.173647,0.984808,-0,0,-0.984808,0.173647,1e-06,0,-44.0995,39.4317,50.0058,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "CABBA414-2F45-3690-B37E-953B65AE087B"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.008",
+            "uuid": "C1E01178-20D5-36CD-A6F2-47BD58EA1136",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,1.99299,29.2029,-18.0734,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "9C072B8C-2004-3C9E-B128-F5254BA2383C"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.009",
+            "uuid": "033645E0-C1CF-36A3-9E1F-8090FC854CCF",
+            "matrix": [1,0,2e-06,0,0,0.984808,-0.173647,0,-1e-06,0.173647,0.984808,0,3.12814,39.4317,-114.186,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A5174C2B-334A-35EF-8E72-7BF7816D4E80"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.010",
+            "uuid": "39A36FB3-121E-3D07-96E8-8E45434038D6",
+            "matrix": [1,0,2e-06,0,2e-06,0,-1,0,0,1,0,0,3.12816,19,-123.265,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "94BAE1D4-1EDB-3EC0-AB27-CBF63603E4FF"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.011",
+            "uuid": "02C4861F-B931-370D-8152-1B2DB6B0B6A5",
+            "matrix": [1,0,2e-06,0,2e-06,0,-1,0,0,1,0,0,65.6282,19,-123.265,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "EBD1D10A-0732-3511-9B9F-38C8134F1E63"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.012",
+            "uuid": "AF6E11DB-019C-3CA9-9C5B-EB3BB4FA59BE",
+            "matrix": [1,0,2e-06,0,0,0.984808,-0.173647,0,-1e-06,0.173647,0.984808,0,65.6281,39.4317,-114.186,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "FCA7E2FE-5318-3DF7-8BF6-06BF16462221"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.013",
+            "uuid": "20F4A461-FA61-3541-977B-1DAE6CA53999",
+            "matrix": [0,0,-1,0,-0.173647,0.984808,-0,0,0.984808,0.173647,0,0,-96.663,39.4317,-13.1,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "44DA8290-6823-3E57-AEE9-B5C8F659B31E"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.014",
+            "uuid": "23108732-90A3-3873-AD6B-73A42288532B",
+            "matrix": [0,0,-1,0,-1,0,-0,0,0,1,0,0,-105.742,19,-13.1,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "1443CA31-642E-3658-8445-278C6349FCCE"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.015",
+            "uuid": "40E07CF5-8B7A-3C1C-A486-A7C6B3B6D256",
+            "matrix": [0,0,-1,0,-1,0,-0,0,0,1,0,0,-105.766,19,44.3941,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "E9840A76-A4FC-3231-9FAB-385BDD3E76A0"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.016",
+            "uuid": "59A7673C-79E8-39EC-B59C-16E9A4D3ECF2",
+            "matrix": [0,0,-1,0,-0.173647,0.984808,-0,0,0.984808,0.173647,0,0,-96.6868,39.4317,44.3941,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "B1475992-5F78-35C8-8F25-7FF34C7F6AB9"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.017",
+            "uuid": "CBE48308-EB37-3967-AEFB-74EA29187601",
+            "matrix": [0,0,-1,0,-0.173647,0.984808,-0,0,0.984808,0.173647,0,0,-96.6868,39.4317,164.394,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "7DE27FE8-F970-3955-8841-6CC3E8904C04"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.018",
+            "uuid": "064936A1-B4F5-3C09-A41B-C15E3A9F6A4E",
+            "matrix": [0,0,-1,0,-1,0,-0,0,0,1,0,0,-105.766,19,164.394,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "DE861855-F4AB-37B1-8FB0-ACA26F4439BE"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.019",
+            "uuid": "8419B484-34A9-3891-8987-1EA6DBF11D9B",
+            "matrix": [0,0,-1,0,-1,0,-0,0,0,1,0,0,-105.742,19,106.9,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A6CFBD89-CB56-3FBC-ACC7-840F16853C99"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.020",
+            "uuid": "04E4CC5A-C282-3B46-A8CA-23F6123675B6",
+            "matrix": [0,0,-1,0,-0.173647,0.984808,-0,0,0.984808,0.173647,0,0,-96.663,39.4317,106.9,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "DC3AE60F-C1F8-3A4A-8091-9074F47C2A66"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.021",
+            "uuid": "1C6E4603-5E2A-3529-9944-7BC78779DA19",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,0.103775,-4.59621,-17.8954,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "0C3F39B2-F890-3E3D-8AEC-A111CB0969FE"
+        },{
+            "type": "Mesh",
+            "name": "Cylinder.022",
+            "uuid": "9E1A9265-5ECA-3CB8-95A6-E521662B8554",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,1.97432,-2.00693,-17.5099,1],
+            "visible": true,
+            "material": "EC80B1CE-51DD-33FA-9501-82BCF81DD02B",
+            "castShadow": true,
+            "receiveShadow": true,
+            "geometry": "A11A6A75-0459-3996-9C15-CDEAF04156FD"
+        }]
+    },
+    "textures": [],
+    "geometries": [{
+        "type": "Geometry",
+        "uuid": "0C3F39B2-F890-3E3D-8AEC-A111CB0969FE",
+        "data": {
+            "name": "Cylinder.026Geometry",
+            "vertices": [1e-06,37.0808,-4,1e-06,37.0808,4,9.59721,35.8173,-4,9.59721,35.8173,4,18.5404,32.1129,-4,18.5404,32.1129,4,26.2201,26.2201,-4,26.2201,26.2201,4,32.1129,18.5404,-4,32.1129,18.5404,4,35.8173,9.59722,-4,35.8173,9.59722,4,37.0808,7e-06,-4,37.0808,7e-06,4,35.8173,-9.5972,-4,35.8173,-9.5972,4,32.1129,-18.5404,-4,32.1129,-18.5404,4,26.2201,-26.2201,-4,26.2201,-26.2201,4,18.5404,-32.1129,-4,18.5404,-32.1129,4,9.59722,-35.8173,-4,9.59722,-35.8173,4,1.5e-05,-37.0808,-4,1.5e-05,-37.0808,4,-9.59719,-35.8173,-4,-9.59719,-35.8173,4,-18.5404,-32.1129,-4,-18.5404,-32.1129,4,-26.22,-26.2201,-4,-26.22,-26.2201,4,-32.1129,-18.5404,-4,-32.1129,-18.5404,4,-35.8173,-9.59722,-4,-35.8173,-9.59722,4,-37.0808,-1.3e-05,-4,-37.0808,-1.3e-05,4,-35.8173,9.59719,-4,-35.8173,9.59719,4,-32.1129,18.5404,-4,-32.1129,18.5404,4,-26.2201,26.2201,-4,-26.2201,26.2201,4,-18.5404,32.1129,-4,-18.5404,32.1129,4,-9.59724,35.8173,-4,-9.59724,35.8173,4],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 68,
+                "version": 3,
+                "vertices": 48
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,3,1,47,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,3,47,43,0,3,19,11,0,35,27,19,0,3,43,35,0,3,35,19,1,1,0,46,47,1,44,45,47,46,0,0,44,46,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,40,44,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,32,40,0,16,24,32,0,0,8,16,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "F0EC72AF-D97F-33D4-A6A1-2B3CD00FB1D3",
+        "data": {
+            "name": "Cylinder.009Geometry",
+            "vertices": [0,1.5,-5.25,0,1.5,5.25,0.75,1.29904,-5.25,0.75,1.29904,5.25,1.29904,0.75,-5.25,1.29904,0.75,5.25,1.5,0,-5.25,1.5,0,5.25,1.29904,-0.75,-5.25,1.29904,-0.75,5.25,0.75,-1.29904,-5.25,0.75,-1.29904,5.25,0,-1.5,-5.25,0,-1.5,5.25,-0.75,-1.29904,-5.25,-0.75,-1.29904,5.25,-1.29904,-0.75,-5.25,-1.29904,-0.75,5.25,-1.5,-0,-5.25,-1.5,-0,5.25,-1.29904,0.75,-5.25,-1.29904,0.75,5.25,-0.750001,1.29904,-5.25,-0.750001,1.29904,5.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 32,
+                "version": 3,
+                "vertices": 24
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,3,1,23,0,3,11,7,0,19,15,11,0,3,23,19,0,3,19,11,1,1,0,22,23,1,20,21,23,22,0,0,20,22,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,16,20,0,8,12,16,0,0,4,8,0,0,8,16]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "142E7471-10FC-3F1B-8ECF-52ABD71B97B0",
+        "data": {
+            "name": "Cube.167Geometry",
+            "vertices": [-22.7873,-1.5,-20.25,-22.7873,1.5,-20.25,22.7873,1.5,-20.25,22.7873,-1.5,-20.25,-22.7873,-1.5,20.25,-22.7873,1.5,20.25,22.7873,1.5,20.25,22.7873,-1.5,20.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "00DB422C-788D-34EA-8698-0DDCD492EE71",
+        "data": {
+            "name": "Cube.194Geometry",
+            "vertices": [-18,-0.25,-2,-18,0.25,-2,18,0.25,-2,18,-0.25,-2,-18,-0.25,2,-18,0.25,2,18,0.25,2,18,-0.25,2],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "7DE27FE8-F970-3955-8841-6CC3E8904C04",
+        "data": {
+            "name": "Cylinder.022Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "0D74A82C-D947-3EA3-BBBA-35FD9F3E8A5D",
+        "data": {
+            "name": "Cube.181Geometry",
+            "vertices": [-0.75,-25,-7,-0.75,25,-7,0.75,25,-7,0.75,-25,-7,-0.75,-25,7,-0.75,25,7,0.75,25,7,0.75,-25,7],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "3E51F710-002F-31EB-A516-5CF08AE21EAA",
+        "data": {
+            "name": "Cube.017Geometry",
+            "vertices": [-6.01896,-0.157342,-5.10232,-6.01896,0.157342,-5.10232,6.01896,0.157342,-5.10232,6.01896,-0.157342,-5.10232,-6.01896,-0.157342,5.10232,-6.01896,0.157342,5.10232,6.01896,0.157342,5.10232,6.01896,-0.157342,5.10232],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "F0D87CF2-C3A7-376C-B032-DC0E7FAD495B",
+        "data": {
+            "name": "Cylinder.008Geometry",
+            "vertices": [0,1.5,-5.25,0,1.5,5.25,0.75,1.29904,-5.25,0.75,1.29904,5.25,1.29904,0.75,-5.25,1.29904,0.75,5.25,1.5,0,-5.25,1.5,0,5.25,1.29904,-0.75,-5.25,1.29904,-0.75,5.25,0.75,-1.29904,-5.25,0.75,-1.29904,5.25,0,-1.5,-5.25,0,-1.5,5.25,-0.75,-1.29904,-5.25,-0.75,-1.29904,5.25,-1.29904,-0.75,-5.25,-1.29904,-0.75,5.25,-1.5,-0,-5.25,-1.5,-0,5.25,-1.29904,0.75,-5.25,-1.29904,0.75,5.25,-0.750001,1.29904,-5.25,-0.750001,1.29904,5.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 32,
+                "version": 3,
+                "vertices": 24
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,3,1,23,0,3,11,7,0,19,15,11,0,3,23,19,0,3,19,11,1,1,0,22,23,1,20,21,23,22,0,0,20,22,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,16,20,0,8,12,16,0,0,4,8,0,0,8,16]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "DE861855-F4AB-37B1-8FB0-ACA26F4439BE",
+        "data": {
+            "name": "Cylinder.023Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "FB2708FB-C615-3C7B-9894-5994890795AB",
+        "data": {
+            "name": "Cube.006Geometry",
+            "vertices": [-2.56466,-0.183472,-5.10232,-2.56466,0.183472,-5.10232,2.56466,0.183472,-5.10232,2.56466,-0.183472,-5.10232,-2.56466,-0.183472,5.10232,-2.56466,0.183472,5.10232,2.56466,0.183472,5.10232,2.56466,-0.183472,5.10232],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "20950643-3F2C-3990-8CC1-921E0A153381",
+        "data": {
+            "name": "Cube.015Geometry",
+            "vertices": [-2.56466,-0.183472,-5.10232,-2.56466,0.183472,-5.10232,2.56466,0.183472,-5.10232,2.56466,-0.183472,-5.10232,-2.56466,-0.183472,5.10232,-2.56466,0.183472,5.10232,2.56466,0.183472,5.10232,2.56466,-0.183472,5.10232],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "44DA8290-6823-3E57-AEE9-B5C8F659B31E",
+        "data": {
+            "name": "Cylinder.018Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A6CFBD89-CB56-3FBC-ACC7-840F16853C99",
+        "data": {
+            "name": "Cylinder.024Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "DC3AE60F-C1F8-3A4A-8091-9074F47C2A66",
+        "data": {
+            "name": "Cylinder.025Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A5174C2B-334A-35EF-8E72-7BF7816D4E80",
+        "data": {
+            "name": "Cylinder.013Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "50F99163-A2AE-31A1-A74C-8B4719E10C70",
+        "data": {
+            "name": "Cube.189Geometry",
+            "vertices": [-5.5,-0.25,-22.25,-5.5,0.25,-22.25,5.5,0.25,-22.25,5.5,-0.25,-22.25,-5.5,-0.25,22.25,-5.5,0.25,22.25,5.5,0.25,22.25,5.5,-0.25,22.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "9C072B8C-2004-3C9E-B128-F5254BA2383C",
+        "data": {
+            "name": "Cylinder.015Geometry",
+            "vertices": [-1e-06,20,-10.9657,-1e-06,20,10.9657,5.17638,19.3185,-10.9657,5.17638,19.3185,10.9657,10,17.3205,-10.9657,10,17.3205,10.9657,14.1421,14.1421,-10.9657,14.1421,14.1421,10.9657,17.3205,10,-10.9657,17.3205,10,10.9657,19.3185,5.17638,-10.9657,19.3185,5.17638,10.9657,20,3e-06,-10.9657,20,3e-06,10.9657,19.3185,-5.17638,-10.9657,19.3185,-5.17638,10.9657,17.3205,-9.99999,-10.9657,17.3205,-9.99999,10.9657,14.1421,-14.1421,-10.9657,14.1421,-14.1421,10.9657,10,-17.3205,-10.9657,10,-17.3205,10.9657,5.17639,-19.3185,-10.9657,5.17639,-19.3185,10.9657,7e-06,-20,-10.9657,7e-06,-20,10.9657,-5.17637,-19.3185,-10.9657,-5.17637,-19.3185,10.9657,-9.99999,-17.3205,-10.9657,-9.99999,-17.3205,10.9657,-14.1421,-14.1421,-10.9657,-14.1421,-14.1421,10.9657,-17.3205,-10,-10.9657,-17.3205,-10,10.9657,-19.3185,-5.17639,-10.9657,-19.3185,-5.17639,10.9657,-20,-7e-06,-10.9657,-20,-7e-06,10.9657,-19.3185,5.17637,-10.9657,-19.3185,5.17637,10.9657,-17.3205,9.99999,-10.9657,-17.3205,9.99999,10.9657,-14.1421,14.1421,-10.9657,-14.1421,14.1421,10.9657,-10,17.3205,-10.9657,-10,17.3205,10.9657,-5.1764,19.3185,-10.9657,-5.1764,19.3185,10.9657],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 68,
+                "version": 3,
+                "vertices": 48
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,3,1,47,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,3,47,43,0,3,19,11,0,35,27,19,0,3,43,35,0,3,35,19,1,1,0,46,47,1,44,45,47,46,0,0,44,46,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,40,44,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,32,40,0,16,24,32,0,0,8,16,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A7F96A3C-B8AC-33A9-9A61-D9276BDD676B",
+        "data": {
+            "name": "Cube.171Geometry",
+            "vertices": [-31.2195,-1.5,-19.25,-31.2195,1.5,-19.25,31.2195,1.5,-19.25,31.2195,-1.5,-19.25,-31.2195,-1.5,19.25,-31.2195,1.5,19.25,31.2195,1.5,19.25,31.2195,-1.5,19.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "CEB52BF9-28BD-3C3A-A213-D82A1349DFE9",
+        "data": {
+            "name": "Cube.198Geometry",
+            "vertices": [-5.5,-10.6211,-0.75,-5.5,10.6211,-0.75,5.5,10.6211,-0.75,5.5,-10.6211,-0.75,-5.5,-10.6211,0.75,-5.5,10.6211,0.75,5.5,10.6211,0.75,5.5,-10.6211,0.75],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "CE1DEE85-FF09-3DA8-B3E0-4CB1FE3F1846",
+        "data": {
+            "name": "Cube.193Geometry",
+            "vertices": [-5.69684,-0.458681,-7.36293,-5.69684,0.458681,-7.36293,5.69684,0.458681,-7.36293,5.69684,-0.458681,-7.36293,-5.69684,-0.458681,7.36293,-5.69684,0.458681,7.36293,5.69684,0.458681,7.36293,5.69684,-0.458681,7.36293],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "9FD789E0-82D0-31D7-B3BE-ABC11EB39FDB",
+        "data": {
+            "name": "Cube.169Geometry",
+            "vertices": [-20,-0.75,-6,-20,0.75,-6,20,0.75,-6,20,-0.75,-6,-20,-0.75,6,-20,0.75,6,20,0.75,6,20,-0.75,6],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "473856B3-A1A2-3B73-9AA3-7EEF3B1B09D1",
+        "data": {
+            "name": "Cube.202Geometry",
+            "vertices": [-23.3914,-8.66274,-3.5,-23.3914,8.66274,-3.5,23.3914,8.66274,-3.5,23.3914,-8.66274,-3.5,-23.3914,-8.66274,3.5,-23.3914,8.66274,3.5,23.3914,8.66274,3.5,23.3914,-8.66274,3.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "DE186E1F-439D-3B75-B562-1D599AAF150D",
+        "data": {
+            "name": "Cube.191Geometry",
+            "vertices": [-18,-0.25,-22.25,-18,0.25,-22.25,18,0.25,-22.25,18,-0.25,-22.25,-18,-0.25,22.25,-18,0.25,22.25,18,0.25,22.25,18,-0.25,22.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "E9840A76-A4FC-3231-9FAB-385BDD3E76A0",
+        "data": {
+            "name": "Cylinder.020Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A22D3004-8A5C-371F-A470-2CBEE5CFE018",
+        "data": {
+            "name": "Cube.176Geometry",
+            "vertices": [-1,-1,-19.25,-1,1,-19.25,1,1,-19.25,1,-1,-19.25,-1,-1,19.25,-1,1,19.25,1,1,19.25,1,-1,19.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "9B8F34E5-0A60-3113-A56E-37E43C6A21BC",
+        "data": {
+            "name": "Cube.174Geometry",
+            "vertices": [-1,-1,-19.75,-1,1,-19.75,1,1,-19.75,1,-1,-19.75,-1,-1,19.75,-1,1,19.75,1,1,19.75,1,-1,19.75],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "FCA7E2FE-5318-3DF7-8BF6-06BF16462221",
+        "data": {
+            "name": "Cylinder.017Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "4E889588-4B29-362E-AAFC-F1779CB4DEC2",
+        "data": {
+            "name": "Cube.180Geometry.1",
+            "vertices": [-500,-500,-5,-500,500,-5,500,500,-5,500,-500,-5,-500,-500,5,-500,500,5,500,500,5,500,-500,5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "51E3615E-2B80-3A2F-BEAE-2F0F6B0A59D0",
+        "data": {
+            "name": "Cube.178Geometry",
+            "vertices": [-32.5,-56,-0.5,-32.5,56,-0.5,32.5,56,-0.5,32.5,-56,-0.5,-32.5,-56,0.5,-32.5,56,0.5,32.5,56,0.5,32.5,-56,0.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "FDF2617A-FDAD-3FB0-8379-5251765EF81D",
+        "data": {
+            "name": "Cube.179Geometry",
+            "vertices": [-32.5,-56,-0.5,-32.5,56,-0.5,32.5,56,-0.5,32.5,-56,-0.5,-32.5,-56,0.5,-32.5,56,0.5,32.5,56,0.5,32.5,-56,0.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "4AE7DF3C-8CA4-3107-A5D5-3382D9701ECD",
+        "data": {
+            "name": "Cylinder.005Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "1DE3BECC-5962-38A2-884B-659B32435476",
+        "data": {
+            "name": "Cube.195Geometry",
+            "vertices": [-18,-0.25,-5.5,-18,0.25,-5.5,18,0.25,-5.5,18,-0.25,-5.5,-18,-0.25,5.5,-18,0.25,5.5,18,0.25,5.5,18,-0.25,5.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "4DD12C75-E7EF-3967-8E41-B7F2E3BC1AE8",
+        "data": {
+            "name": "Cube.061Geometry",
+            "vertices": [-23.25,-8.5,-0.5,-23.25,8.5,-0.5,23.25,8.5,-0.5,23.25,-8.5,-0.5,-23.25,-8.5,0.5,-23.25,8.5,0.5,23.25,8.5,0.5,23.25,-8.5,0.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "4FFEF9D5-5AFD-3746-B438-06A7BEF3D1D4",
+        "data": {
+            "name": "Cube.050Geometry",
+            "vertices": [-5.5,-3.94671,-0.75,-5.5,3.94671,-0.75,5.5,3.94671,-0.75,5.5,-3.94671,-0.75,-5.5,-3.94671,0.75,-5.5,3.94671,0.75,5.5,3.94671,0.75,5.5,-3.94671,0.75],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A11A6A75-0459-3996-9C15-CDEAF04156FD",
+        "data": {
+            "name": "Cylinder.027Geometry",
+            "vertices": [0,18.3792,-1.98261,0,18.3792,1.98261,4.75689,17.7529,-1.98261,4.75689,17.7529,1.98261,9.1896,15.9169,-1.98261,9.1896,15.9169,1.98261,12.9961,12.9961,-1.98261,12.9961,12.9961,1.98261,15.9169,9.1896,-1.98261,15.9169,9.1896,1.98261,17.7529,4.75689,-1.98261,17.7529,4.75689,1.98261,18.3792,3e-06,-1.98261,18.3792,3e-06,1.98261,17.7529,-4.75688,-1.98261,17.7529,-4.75688,1.98261,15.9169,-9.18959,-1.98261,15.9169,-9.18959,1.98261,12.9961,-12.9961,-1.98261,12.9961,-12.9961,1.98261,9.1896,-15.9168,-1.98261,9.1896,-15.9168,1.98261,4.75689,-17.7529,-1.98261,4.75689,-17.7529,1.98261,7e-06,-18.3792,-1.98261,7e-06,-18.3792,1.98261,-4.75688,-17.7529,-1.98261,-4.75688,-17.7529,1.98261,-9.18959,-15.9169,-1.98261,-9.18959,-15.9169,1.98261,-12.996,-12.9961,-1.98261,-12.996,-12.9961,1.98261,-15.9169,-9.1896,-1.98261,-15.9169,-9.1896,1.98261,-17.7529,-4.75689,-1.98261,-17.7529,-4.75689,1.98261,-18.3792,-7e-06,-1.98261,-18.3792,-7e-06,1.98261,-17.7529,4.75688,-1.98261,-17.7529,4.75688,1.98261,-15.9169,9.18959,-1.98261,-15.9169,9.18959,1.98261,-12.9961,12.996,-1.98261,-12.9961,12.996,1.98261,-9.18961,15.9168,-1.98261,-9.18961,15.9168,1.98261,-4.7569,17.7529,-1.98261,-4.7569,17.7529,1.98261],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 68,
+                "version": 3,
+                "vertices": 48
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,3,1,47,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,3,47,43,0,3,19,11,0,35,27,19,0,3,43,35,0,3,35,19,1,1,0,46,47,1,44,45,47,46,0,0,44,46,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,40,44,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,32,40,0,16,24,32,0,0,8,16,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A7403AD2-F9A1-3C81-911C-0B9A8C4E7517",
+        "data": {
+            "name": "Cube.201Geometry",
+            "vertices": [-45.4481,-18.172,-3.5,-45.4481,18.172,-3.5,45.4481,18.172,-3.5,45.4481,-18.172,-3.5,-45.4481,-18.172,3.5,-45.4481,18.172,3.5,45.4481,18.172,3.5,45.4481,-18.172,3.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "FEE19EC5-E9F2-362C-8FD0-69436B27A566",
+        "data": {
+            "name": "Cylinder.003Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "6AAD4B53-A71E-32D8-90F4-255D6F86D49C",
+        "data": {
+            "name": "Cylinder.006Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "3D53F129-ACF0-3B51-BFA2-74E67139A6A4",
+        "data": {
+            "name": "Cylinder.010Geometry",
+            "vertices": [0,1.5,-5.25,0,1.5,5.25,0.75,1.29904,-5.25,0.75,1.29904,5.25,1.29904,0.75,-5.25,1.29904,0.75,5.25,1.5,0,-5.25,1.5,0,5.25,1.29904,-0.75,-5.25,1.29904,-0.75,5.25,0.75,-1.29904,-5.25,0.75,-1.29904,5.25,0,-1.5,-5.25,0,-1.5,5.25,-0.75,-1.29904,-5.25,-0.75,-1.29904,5.25,-1.29904,-0.75,-5.25,-1.29904,-0.75,5.25,-1.5,-0,-5.25,-1.5,-0,5.25,-1.29904,0.75,-5.25,-1.29904,0.75,5.25,-0.750001,1.29904,-5.25,-0.750001,1.29904,5.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 32,
+                "version": 3,
+                "vertices": 24
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,3,1,23,0,3,11,7,0,19,15,11,0,3,23,19,0,3,19,11,1,1,0,22,23,1,20,21,23,22,0,0,20,22,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,16,20,0,8,12,16,0,0,4,8,0,0,8,16]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "1A04AA87-DA7A-3B14-9405-9A1882B7EDBB",
+        "data": {
+            "name": "Cube.027Geometry",
+            "vertices": [-42.1919,-0.75,-6,-42.1919,0.75,-6,42.1919,0.75,-6,42.1919,-0.75,-6,-42.1919,-0.75,6,-42.1919,0.75,6,42.1919,0.75,6,42.1919,-0.75,6],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "DCA24E96-9468-357E-AD01-3232BB5D898A",
+        "data": {
+            "name": "CylinderGeometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "B547E0D5-5655-3F81-AE1C-D30C50A180D8",
+        "data": {
+            "name": "Cube.200Geometry",
+            "vertices": [-5,-17.5,-3.5,-5,17.5,-3.5,5,17.5,-3.5,5,-17.5,-3.5,-5,-17.5,3.5,-5,17.5,3.5,5,17.5,3.5,5,-17.5,3.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "37B7F62D-946A-35C2-AF15-1EE1B0727703",
+        "data": {
+            "name": "Cube.023Geometry",
+            "vertices": [-10,-0.75,-7,-10,0.75,-7,10,0.75,-7,10,-0.75,-7,-10,-0.75,7,-10,0.75,7,10,0.75,7,10,-0.75,7],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "304CB01D-DD05-3AB3-BB0F-77463521E6F5",
+        "data": {
+            "name": "Cube.168Geometry",
+            "vertices": [-56.6287,-1.5,-20.25,-56.6287,1.5,-20.25,56.6287,1.5,-20.25,56.6287,-1.5,-20.25,-56.6287,-1.5,20.25,-56.6287,1.5,20.25,56.6287,1.5,20.25,56.6287,-1.5,20.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "4B30CEE3-5D0C-3CBE-8924-46FF8DB30134",
+        "data": {
+            "name": "Cylinder.012Geometry",
+            "vertices": [0,1.5,-5.25,0,1.5,5.25,0.75,1.29904,-5.25,0.75,1.29904,5.25,1.29904,0.75,-5.25,1.29904,0.75,5.25,1.5,0,-5.25,1.5,0,5.25,1.29904,-0.75,-5.25,1.29904,-0.75,5.25,0.75,-1.29904,-5.25,0.75,-1.29904,5.25,0,-1.5,-5.25,0,-1.5,5.25,-0.75,-1.29904,-5.25,-0.75,-1.29904,5.25,-1.29904,-0.75,-5.25,-1.29904,-0.75,5.25,-1.5,-0,-5.25,-1.5,-0,5.25,-1.29904,0.75,-5.25,-1.29904,0.75,5.25,-0.750001,1.29904,-5.25,-0.750001,1.29904,5.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 32,
+                "version": 3,
+                "vertices": 24
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,3,1,23,0,3,11,7,0,19,15,11,0,3,23,19,0,3,19,11,1,1,0,22,23,1,20,21,23,22,0,0,20,22,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,16,20,0,8,12,16,0,0,4,8,0,0,8,16]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "CABBA414-2F45-3690-B37E-953B65AE087B",
+        "data": {
+            "name": "Cylinder.007Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "1443CA31-642E-3658-8445-278C6349FCCE",
+        "data": {
+            "name": "Cylinder.019Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "926BFEE6-C81A-3C1F-9106-F7650DC40F6C",
+        "data": {
+            "name": "Cube.170Geometry",
+            "vertices": [-31.2195,-1.5,-20.25,-31.2195,1.5,-20.25,31.2195,1.5,-20.25,31.2195,-1.5,-20.25,-31.2195,-1.5,20.25,-31.2195,1.5,20.25,31.2195,1.5,20.25,31.2195,-1.5,20.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "AA6389DE-9923-3D0B-AC40-5E92CB4631FF",
+        "data": {
+            "name": "Cube.019Geometry",
+            "vertices": [-64,-70.8162,-3.5,-64,70.8162,-3.5,64,70.8162,-3.5,64,-70.8162,-3.5,-64,-70.8162,3.5,-64,70.8162,3.5,64,70.8162,3.5,64,-70.8162,3.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "B1475992-5F78-35C8-8F25-7FF34C7F6AB9",
+        "data": {
+            "name": "Cylinder.021Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A74560F1-2FC8-370C-92C4-78BE89787F22",
+        "data": {
+            "name": "Cube.049Geometry",
+            "vertices": [-34.7824,-0.75,-6.75,-34.7824,0.75,-6.75,34.7824,0.75,-6.75,34.7824,-0.75,-6.75,-34.7824,-0.75,6.75,-34.7824,0.75,6.75,34.7824,0.75,6.75,34.7824,-0.75,6.75],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "AFB211BE-D7D4-31E0-8F0E-D4485F799EC0",
+        "data": {
+            "name": "Cube.021Geometry",
+            "vertices": [-10,-25,-0.75,-10,25,-0.75,10,25,-0.75,10,-25,-0.75,-10,-25,0.75,-10,25,0.75,10,25,0.75,10,-25,0.75],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "8E380099-B375-33B8-B7D4-C3A1D881DED9",
+        "data": {
+            "name": "Cube.182Geometry",
+            "vertices": [-1.5,-1.5,-9.43944,-1.5,1.5,-9.43944,1.5,1.5,-9.43944,1.5,-1.5,-9.43944,-1.5,-1.5,9.43944,-1.5,1.5,9.43944,1.5,1.5,9.43944,1.5,-1.5,9.43944],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "A654CDED-509D-3097-B964-9014CEAC662B",
+        "data": {
+            "name": "Cylinder.004Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "F18F4175-6D3B-3D09-96BF-BA3A74C0FAB0",
+        "data": {
+            "name": "Cube.196Geometry",
+            "vertices": [-23.25,-8.68203,-0.5,-23.25,8.68203,-0.5,23.25,8.68203,-0.5,23.25,-8.68203,-0.5,-23.25,-8.68203,0.5,-23.25,8.68203,0.5,23.25,8.68203,0.5,23.25,-8.68203,0.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "8471EA05-1861-3A72-A1AB-E2EFBD627B36",
+        "data": {
+            "name": "Cylinder.001Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "451E0FE4-79AE-3B1A-AA00-1401A97E3FE4",
+        "data": {
+            "name": "Cube.173Geometry",
+            "vertices": [-5.69684,-0.917362,-12.5,-5.69684,0.917362,-12.5,5.69684,0.917362,-12.5,5.69684,-0.917362,-12.5,-5.69684,-0.917362,12.5,-5.69684,0.917362,12.5,5.69684,0.917362,12.5,5.69684,-0.917362,12.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "CDDB1799-945D-376D-9D57-0C5F404A241A",
+        "data": {
+            "name": "Cube.197Geometry",
+            "vertices": [-12,-0.5,-8.5,-12,0.5,-8.5,12,0.5,-8.5,12,-0.5,-8.5,-12,-0.5,8.5,-12,0.5,8.5,12,0.5,8.5,12,-0.5,8.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "C281BE12-5C30-3B28-BEA5-E8C42A4D842C",
+        "data": {
+            "name": "Cylinder.011Geometry",
+            "vertices": [0,1.5,-5.25,0,1.5,5.25,0.75,1.29904,-5.25,0.75,1.29904,5.25,1.29904,0.75,-5.25,1.29904,0.75,5.25,1.5,0,-5.25,1.5,0,5.25,1.29904,-0.75,-5.25,1.29904,-0.75,5.25,0.75,-1.29904,-5.25,0.75,-1.29904,5.25,0,-1.5,-5.25,0,-1.5,5.25,-0.75,-1.29904,-5.25,-0.75,-1.29904,5.25,-1.29904,-0.75,-5.25,-1.29904,-0.75,5.25,-1.5,-0,-5.25,-1.5,-0,5.25,-1.29904,0.75,-5.25,-1.29904,0.75,5.25,-0.750001,1.29904,-5.25,-0.750001,1.29904,5.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 32,
+                "version": 3,
+                "vertices": 24
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,3,1,23,0,3,11,7,0,19,15,11,0,3,23,19,0,3,19,11,1,1,0,22,23,1,20,21,23,22,0,0,20,22,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,16,20,0,8,12,16,0,0,4,8,0,0,8,16]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "EBD1D10A-0732-3511-9B9F-38C8134F1E63",
+        "data": {
+            "name": "Cylinder.016Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "BE4C159D-4098-3FA4-AEE6-8DD23A1DD325",
+        "data": {
+            "name": "Cube.199Geometry",
+            "vertices": [-65.75,-0.75,-7.375,-65.75,0.75,-7.375,65.75,0.75,-7.375,65.75,-0.75,-7.375,-65.75,-0.75,7.375,-65.75,0.75,7.375,65.75,0.75,7.375,65.75,-0.75,7.375],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "B573B370-4610-3416-8B18-F587C0B76212",
+        "data": {
+            "name": "Cube.029Geometry",
+            "vertices": [-28.4514,-0.75,-6.75,-28.4514,0.75,-6.75,28.4514,0.75,-6.75,28.4514,-0.75,-6.75,-28.4514,-0.75,6.75,-28.4514,0.75,6.75,28.4514,0.75,6.75,28.4514,-0.75,6.75],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "B773068D-6342-38B8-A4C2-ED3E48CC166C",
+        "data": {
+            "name": "Cylinder.002Geometry",
+            "vertices": [-0,0.5,-9,-0,0.5,9,0.097545,0.490392,-9,0.097545,0.490392,9,0.191342,0.46194,-9,0.191342,0.46194,9,0.277785,0.415735,-9,0.277785,0.415735,9,0.353553,0.353553,-9,0.353553,0.353553,9,0.415735,0.277785,-9,0.415735,0.277785,9,0.46194,0.191342,-9,0.46194,0.191342,9,0.490393,0.097545,-9,0.490393,0.097545,9,0.5,-0,-9,0.5,-0,9,0.490393,-0.097545,-9,0.490393,-0.097545,9,0.46194,-0.191342,-9,0.46194,-0.191342,9,0.415735,-0.277785,-9,0.415735,-0.277785,9,0.353553,-0.353554,-9,0.353553,-0.353554,9,0.277785,-0.415735,-9,0.277785,-0.415735,9,0.191342,-0.46194,-9,0.191342,-0.46194,9,0.097545,-0.490393,-9,0.097545,-0.490393,9,-0,-0.5,-9,-0,-0.5,9,-0.097545,-0.490393,-9,-0.097545,-0.490393,9,-0.191342,-0.46194,-9,-0.191342,-0.46194,9,-0.277785,-0.415735,-9,-0.277785,-0.415735,9,-0.353554,-0.353553,-9,-0.353554,-0.353553,9,-0.415735,-0.277785,-9,-0.415735,-0.277785,9,-0.46194,-0.191342,-9,-0.46194,-0.191342,9,-0.490393,-0.097545,-9,-0.490393,-0.097545,9,-0.5,0,-9,-0.5,0,9,-0.490393,0.097546,-9,-0.490393,0.097546,9,-0.46194,0.191342,-9,-0.46194,0.191342,9,-0.415734,0.277785,-9,-0.415734,0.277785,9,-0.353553,0.353554,-9,-0.353553,0.353554,9,-0.277785,0.415735,-9,-0.277785,0.415735,9,-0.191341,0.46194,-9,-0.191341,0.46194,9,-0.097544,0.490393,-9,-0.097544,0.490393,9],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "94BAE1D4-1EDB-3EC0-AB27-CBF63603E4FF",
+        "data": {
+            "name": "Cylinder.014Geometry",
+            "vertices": [-0,0.7,-20,-0,0.7,20,0.136563,0.686549,-20,0.136563,0.686549,20,0.267878,0.646715,-20,0.267878,0.646715,20,0.388899,0.582029,-20,0.388899,0.582029,20,0.494975,0.494974,-20,0.494975,0.494974,20,0.582029,0.388899,-20,0.582029,0.388899,20,0.646716,0.267878,-20,0.646716,0.267878,20,0.68655,0.136563,-20,0.68655,0.136563,20,0.7,-0,-20,0.7,-0,20,0.68655,-0.136563,-20,0.68655,-0.136563,20,0.646716,-0.267879,-20,0.646716,-0.267879,20,0.582029,-0.388899,-20,0.582029,-0.388899,20,0.494975,-0.494975,-20,0.494975,-0.494975,20,0.388899,-0.582029,-20,0.388899,-0.582029,20,0.267878,-0.646716,-20,0.267878,-0.646716,20,0.136563,-0.68655,-20,0.136563,-0.68655,20,-0,-0.7,-20,-0,-0.7,20,-0.136564,-0.68655,-20,-0.136564,-0.68655,20,-0.267879,-0.646716,-20,-0.267879,-0.646716,20,-0.3889,-0.582029,-20,-0.3889,-0.582029,20,-0.494975,-0.494975,-20,-0.494975,-0.494975,20,-0.582029,-0.388899,-20,-0.582029,-0.388899,20,-0.646716,-0.267878,-20,-0.646716,-0.267878,20,-0.68655,-0.136563,-20,-0.68655,-0.136563,20,-0.7,0,-20,-0.7,0,20,-0.68655,0.136564,-20,-0.68655,0.136564,20,-0.646715,0.267879,-20,-0.646715,0.267879,20,-0.582028,0.3889,-20,-0.582028,0.3889,20,-0.494974,0.494975,-20,-0.494974,0.494975,20,-0.388899,0.582029,-20,-0.388899,0.582029,20,-0.267878,0.646716,-20,-0.267878,0.646716,20,-0.136562,0.68655,-20,-0.136562,0.68655,20],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 92,
+                "version": 3,
+                "vertices": 64
+            },
+            "faces": [1,0,1,3,2,1,2,3,5,4,1,4,5,7,6,1,6,7,9,8,1,8,9,11,10,1,10,11,13,12,1,12,13,15,14,1,14,15,17,16,1,16,17,19,18,1,18,19,21,20,1,20,21,23,22,1,22,23,25,24,1,24,25,27,26,1,26,27,29,28,1,28,29,31,30,1,30,31,33,32,1,32,33,35,34,1,34,35,37,36,1,36,37,39,38,1,38,39,41,40,1,40,41,43,42,1,42,43,45,44,1,44,45,47,46,1,46,47,49,48,1,48,49,51,50,1,50,51,53,52,1,52,53,55,54,1,54,55,57,56,1,56,57,59,58,1,58,59,61,60,0,3,7,5,0,11,9,7,0,15,13,11,0,19,17,15,0,23,21,19,0,27,25,23,0,31,29,27,0,35,33,31,0,39,37,35,0,43,41,39,0,47,45,43,0,51,49,47,0,55,53,51,0,59,57,55,0,63,61,59,0,3,1,63,0,3,11,7,0,19,15,11,0,27,23,19,0,35,31,27,0,43,39,35,0,51,47,43,0,59,55,51,0,3,63,59,0,3,19,11,0,35,27,19,0,51,43,35,0,3,59,51,0,3,35,19,0,3,51,35,1,1,0,62,63,1,60,61,63,62,0,0,60,62,0,56,58,60,0,52,54,56,0,48,50,52,0,44,46,48,0,40,42,44,0,36,38,40,0,32,34,36,0,28,30,32,0,24,26,28,0,20,22,24,0,16,18,20,0,12,14,16,0,8,10,12,0,4,6,8,0,0,2,4,0,0,56,60,0,48,52,56,0,40,44,48,0,32,36,40,0,24,28,32,0,16,20,24,0,8,12,16,0,0,4,8,0,0,48,56,0,32,40,48,0,16,24,32,0,0,8,16,0,0,32,48,0,0,16,32]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "7BF2164B-0653-3C12-98E2-D5D4AAC088E3",
+        "data": {
+            "name": "Cube.172Geometry",
+            "vertices": [-5.69684,-0.917362,-12.5,-5.69684,0.917362,-12.5,5.69684,0.917362,-12.5,5.69684,-0.917362,-12.5,-5.69684,-0.917362,12.5,-5.69684,0.917362,12.5,5.69684,0.917362,12.5,5.69684,-0.917362,12.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "0C996527-78C2-37EC-9E5E-5CC7F4FD9FEF",
+        "data": {
+            "name": "Cube.177Geometry",
+            "vertices": [-32.5,-55.8096,-3.5,-32.5,55.8096,-3.5,32.5,55.8096,-3.5,32.5,-55.8096,-3.5,-32.5,-55.8096,3.5,-32.5,55.8096,3.5,32.5,55.8096,3.5,32.5,-55.8096,3.5],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "ABA75DE8-ED3F-3F1B-B4F6-71245578FBD6",
+        "data": {
+            "name": "Cube.192Geometry",
+            "vertices": [-5.5,-0.25,-22.25,-5.5,0.25,-22.25,5.5,0.25,-22.25,5.5,-0.25,-22.25,-5.5,-0.25,22.25,-5.5,0.25,22.25,5.5,0.25,22.25,5.5,-0.25,22.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    },{
+        "type": "Geometry",
+        "uuid": "714922AC-388A-3391-B1A7-28814685D50E",
+        "data": {
+            "name": "Cube.175Geometry",
+            "vertices": [-1,-1,-19.25,-1,1,-19.25,1,1,-19.25,1,-1,-19.25,-1,-1,19.25,-1,1,19.25,1,1,19.25,1,-1,19.25],
+            "metadata": {
+                "generator": "io_three",
+                "faces": 6,
+                "version": 3,
+                "vertices": 8
+            },
+            "faces": [1,1,0,4,5,1,5,6,2,1,1,6,7,3,2,1,0,3,7,4,1,0,1,2,3,1,7,6,5,4]
+        }
+    }],
+    "metadata": {
+        "type": "Object",
+        "version": 4.3,
+        "generator": "io_three"
+    },
+    "images": []
+}
