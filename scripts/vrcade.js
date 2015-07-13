@@ -1,7 +1,8 @@
 elation.require([
     "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.toggle", "ui.list", "ui.label",
     "engine.engine", "engine.external.three.tween", "engine.things.camera", "engine.things.menu",
-    "vrcade.vrcadeplayer", "vrcade.arcadecabinet", "vrcade.arcademachine", "vrcade.arcadeposter"
+    "vrcade.vrcadeplayer", "vrcade.arcadecabinet", "vrcade.arcademachine", "vrcade.arcadeposter",
+    "share.share", "share.targets.imgur", "share.targets.dropbox", "share.targets.google"
   ], function() {
 
   //elation.template.add('vrcade.intro', '<div data-elation-component="ui.spinner" data-elation-args.label="loading" data-elation-args.type="dark"></div>');
@@ -56,6 +57,7 @@ elation.require([
     this.initControls = function() {
       this.controlstate = this.engine.systems.controls.addContext('vrcade', {
         'menu': ['keyboard_esc,gamepad_0_button_9', elation.bind(this, this.toggleMenu)],
+        'screenshot': ['keyboard_p', elation.bind(this, this.shareScreenshot)],
         'pointerlock': ['pointerlock', elation.bind(this, this.togglePointerLock)],
         'vr_toggle': ['keyboard_ctrl_rightsquarebracket', elation.bind(this, this.toggleVR)],
         'vr_calibrate': ['keyboard_ctrl_leftsquarebracket', elation.bind(this, this.calibrateVR)],
@@ -255,9 +257,9 @@ elation.require([
     this.hideMenu = function() {
       this.player.camera.remove(this.menu);
       if (this.configmenu) this.configmenu.hide();
-      if (this.loaded) {
+      //if (this.loaded) {
         this.player.enable();
-      }
+      //}
       this.menuShowing = false;
       this.menu.disable();
       this.refresh();
@@ -407,16 +409,46 @@ elation.require([
 
       this.player.refresh();
     }
-    this.handlegroupload = function() {
-      //console.log('new group loaded');
-    }
-    this.handleLoaderFinished = function() {
-      if (!this.loaded) {
-        this.loaded = true;
-        if (!this.menuShowing) {
-          this.player.enable();
+
+    this.shareScreenshot = function(ev) {
+      if (typeof ev == 'undefined' || ev.value == 1) {
+        if (!this.sharepicker) {
+          this.sharepicker = elation.share.picker({append: document.body});
+          this.sharepicker.addShareTarget(elation.share.targets.imgur({clientid: '96d8f6e2515953a'}));
+          this.sharepicker.addShareTarget(elation.share.targets.dropbox({clientid: 'g5m5xsgqaqmf7jc'}));
+          this.sharepicker.addShareTarget(elation.share.targets.google({clientid: '374523350201-lev5al121s8u9aaq8spor3spsaugpcmd.apps.googleusercontent.com'}));
+        }
+        var userawdata = false;
+        if (userawdata) {
+          var renderer = this.view.rendersystem.renderer;
+          var rendertarget = this.view.composer.output;
+          var pixeldata = new Uint8Array(rendertarget.width * rendertarget.height * 4);
+          renderer.readRenderTargetPixels(rendertarget, 0, 0, rendertarget.width, rendertarget.height, pixeldata);
+          // TODO - convert raw pixeldata to a PNG/JPG/GIF
+        } else {
+          var canvas = this.view.rendersystem.renderer.domElement;
+          var imagedata = canvas.toDataURL('image/png', 1.0).replace(/.*,/, '');
+
+          this.sharepicker.share('image/png', {
+            name: this.getScreenshotFilename(), 
+            image: imagedata, 
+            encoding: 'base64',
+            album: 'VRcade Screenshots'
+          });
         }
       }
+    }
+    this.getScreenshotFilename = function(extension) {
+      if (!extension) extension = 'png';
+      var now = new Date();
+      function pad(n) {
+        if (n < 10) return '0' + n;
+        return n;
+      }
+      var date = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
+      var time = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
+      var filename = 'vrcade-' + date + ' ' + time + '.' + extension
+      return filename;
     }
   }, elation.engine.things.generic);
 });
