@@ -8,35 +8,42 @@ elation.require([
   //elation.template.add('vrcade.intro', '<div data-elation-component="ui.spinner" data-elation-args.label="loading" data-elation-args.type="dark"></div>');
 
   elation.component.add('vrcade', function() {
-    this.init = function() {
-      this.initEngine();
+    this.initWorld = function() {
+      this.world.setFog(1, 50, 0x111111);
+      this.world.setSky('/media/vrcade/textures/skybox', 'jpg', ['p', 'n']);
 
+      this.vrcade = this.world.spawn('vrcade', 'vrcade');
+
+      var playerpos = [-16.941,0,-24.576];
+      //var playerpos = [0,2.4,0];
+      this.player = this.vrcade.spawn('vrcadeplayer', 'player', { 
+        position: playerpos,
+        startposition: playerpos,
+        orientation: [0, 0.93664, 0, -0.35030], 
+        mass: 20, 
+        height: 2 
+      });
+
+      this.view.setactivething(this.player);
       this.loader = elation.ui.loader({
         append: this,
         right: true,
         bottom: true
       });
-    }
-    this.initEngine = function() {
-      this.engine = elation.engine.create("vrcade", ["physics", "sound", "ai", "world", "render", "controls"], elation.bind(this, this.startEngine));
-    }
-    this.startEngine = function(engine) {
-      elation.require(['engine.things.light', 'engine.things.terrain', 'vrcade.arcadecabinet'], elation.bind(this, function() {
-        engine.systems.world.load({
-          type: 'vrcade',
-          name: 'vrcade',
-          properties: {
-          }
-        });
-        this.view = elation.engine.systems.render.view("main", elation.html.create({ tag: 'div', append: document.body }), { fullsize: 1, picking: true, engine: 'vrcade', showstats: true } );
-        this.gameobj = this.engine.systems.world.children.vrcade;
-        this.gameobj.setview(this.view);
-        elation.events.add(this.loader, 'ui_loader_finish', elation.bind(this.gameobj, this.gameobj.handleLoaderFinished));
-        engine.start();
-      }));
 
+      this.showMenu();
+      //elation.events.add(this.loader, 'ui_loader_finish', elation.bind(this.gameobj, this.gameobj.handleLoaderFinished));
     }
-  });
+    this.startGame = function() {
+      if (!this.started) {
+        this.vrcade.loadGame();  
+        this.started = true;
+      }
+      this.hideMenu();
+    }
+    this.showAbout = function() {
+    }
+  }, elation.engine.client);
 
   elation.component.add('engine.things.vrcade', function() {
     this.gamenum = 0;
@@ -49,35 +56,15 @@ elation.require([
         view: { type: 'object' }
       });
       if (this.properties.view) this.view = this.properties.view;
-      this.initControls();
     }
     this.createObject3D = function() {
       return new THREE.Object3D();
     }
-    this.initControls = function() {
-      this.controlstate = this.engine.systems.controls.addContext('vrcade', {
-        'menu': ['keyboard_esc,gamepad_0_button_9', elation.bind(this, this.toggleMenu)],
-        'screenshot': ['keyboard_p', elation.bind(this, this.shareScreenshot)],
-        'pointerlock': ['pointerlock', elation.bind(this, this.togglePointerLock)],
-        'vr_toggle': ['keyboard_ctrl_rightsquarebracket', elation.bind(this, this.toggleVR)],
-        'vr_calibrate': ['keyboard_ctrl_leftsquarebracket', elation.bind(this, this.calibrateVR)],
-      });
-      this.engine.systems.controls.activateContext('vrcade');
-    }
 
     this.createChildren = function() {
-      this.engine.systems.world.setFog(1, 50, 0x111111);
-      this.engine.systems.world.setSky('/media/vrcade/textures/skybox', 'jpg', ['p', 'n']);
 
       this.lights = this.create_lights();
       elation.engine.geometries.loadMeshFromURL('cabinet-default', '/media/vrcade/models/cabinet/cabinet.dae');
-
-
-      var playerpos = [-16.941,0,-24.576];
-      //var playerpos = [0,2.4,0];
-
-      this.player = this.spawn('vrcadeplayer', 'player', { "position":playerpos, startposition: playerpos, "orientation": [0, 0.93664, 0, -0.35030], mass: 20, height: 2 });
-      this.setview(this.view);
 
       this.vrcadesign = this.spawn('generic', 'vrcadesign', {
         "position": [0,0,0],
@@ -85,7 +72,6 @@ elation.require([
         "scale": [.3048, .3048, .3048]
       });
 
-      this.showMenu();
     }
     this.create_lights = function() {
       var lights = [];
@@ -202,100 +188,6 @@ elation.require([
         this.refresh();
       }
     }
-    this.setview = function(view) {
-      this.view = view;
-      if (this.player) {
-        this.view.setactivething(this.player);
-      }
-    }
-    this.showMenu = function() {
-      if (!this.menu) {
-        this.menu = this.player.camera.spawn('menu', null, { 
-          position: [0,0,-2],
-          items: [
-            { 
-              text: 'Intro',
-              callback: elation.bind(this, this.startIntro),
-              disabled: true
-            },
-            { 
-              text: 'Play',
-              callback: elation.bind(this, this.startGame)
-            },
-            { 
-              text: 'Options', 
-              callback: elation.bind(this, this.configureOptions),
-            },
-            { 
-              text: 'About',
-              callback: elation.bind(this, this.showAbout),
-            },
-/*
-            { 
-              text: 'Quit',
-              disabled: true
-            }
-*/
-          ],
-          labelcfg: {
-            size: .1,
-            lineheight: 1.5,
-            color: 0x999999,
-            hovercolor: 0x003300,
-            disabledcolor: 0x000000,
-            disabledhovercolor: 0x330000,
-          }
-        });
-      } else {
-        this.player.camera.add(this.menu);
-      }
-      this.player.disable();
-      this.menu.enable();
-      this.menuShowing = true;
-      this.refresh();
-    }
-    this.hideMenu = function() {
-      this.player.camera.remove(this.menu);
-      if (this.configmenu) this.configmenu.hide();
-      //if (this.loaded) {
-        this.player.enable();
-      //}
-      this.menuShowing = false;
-      this.menu.disable();
-      this.refresh();
-    }
-    this.toggleMenu = function(ev) {
-      if (ev.value == 1) {
-        if (this.menuShowing) {
-          this.hideMenu();
-        } else {
-          this.showMenu();
-        }
-      }
-    }
-    this.togglePointerLock = function(ev) {
-      if (ev.value == 0) {
-        this.showMenu();
-      }
-    }
-    this.toggleFullscreen = function(ev) {
-      var view = this.view;
-      if (view && (ev.value == 1 || typeof ev.value == 'undefined')) {
-        view.toggleFullscreen();
-      }
-    }
-    this.toggleVR = function(ev) {
-      var view = this.view;
-      if (view && (ev.value == 1 || typeof ev.value == 'undefined')) {
-        var mode = (view.rendermode == 'default' ? 'oculus' : 'default');
-        view.setRenderMode(mode);
-      }
-    }
-    this.calibrateVR = function(ev) {
-      if (this.engine.systems.controls && ev.value == 1) {
-        this.engine.systems.controls.calibrateHMDs();
-      }
-    }
     this.loadGame = function() {
       this.collidermesh = this.spawn('generic', 'collider', {
         //"render.collada": "/media/vrcade/models/flynns-v5/flynns-collider.dae",
@@ -331,13 +223,6 @@ elation.require([
       });
     }
 
-    this.startGame = function() {
-      if (!this.started) {
-        this.loadGame();  
-        this.started = true;
-      }
-      this.hideMenu();
-    }
     this.startIntro = function() {
       var camerapoints = [
         new THREE.Vector3(-50,6,500),
@@ -374,26 +259,6 @@ elation.require([
 
 
     }
-    this.configureOptions = function() {
-      if (!this.configmenu) {
-        var configpanel = elation.engine.configuration({engine: this.engine, view: this.view});
-        this.configmenu = elation.ui.window({
-          append: document.body,
-          classname: 'vrcade_config',
-          center: true,
-          resizable: false,
-          title: 'Configuration',
-          controls: true,
-          maximize: false,
-          minimize: false,
-          content: configpanel
-        });
-      }
-      this.configmenu.show();
-    }
-    this.showAbout = function() {
-      window.open('http://blog.vrcade.io/');
-    }
     this.setgame = function(n) {
       this.gamenum = (n + this.games.length) % this.games.length;
       var gamepos = this.getgameposition(this.gamenum);
@@ -410,45 +275,5 @@ elation.require([
       this.player.refresh();
     }
 
-    this.shareScreenshot = function(ev) {
-      if (typeof ev == 'undefined' || ev.value == 1) {
-        if (!this.sharepicker) {
-          this.sharepicker = elation.share.picker({append: document.body});
-          this.sharepicker.addShareTarget(elation.share.targets.imgur({clientid: '96d8f6e2515953a'}));
-          this.sharepicker.addShareTarget(elation.share.targets.dropbox({clientid: 'g5m5xsgqaqmf7jc'}));
-          this.sharepicker.addShareTarget(elation.share.targets.google({clientid: '374523350201-lev5al121s8u9aaq8spor3spsaugpcmd.apps.googleusercontent.com'}));
-        }
-        var userawdata = false;
-        if (userawdata) {
-          var renderer = this.view.rendersystem.renderer;
-          var rendertarget = this.view.composer.output;
-          var pixeldata = new Uint8Array(rendertarget.width * rendertarget.height * 4);
-          renderer.readRenderTargetPixels(rendertarget, 0, 0, rendertarget.width, rendertarget.height, pixeldata);
-          // TODO - convert raw pixeldata to a PNG/JPG/GIF
-        } else {
-          var canvas = this.view.rendersystem.renderer.domElement;
-          var imagedata = canvas.toDataURL('image/png', 1.0).replace(/.*,/, '');
-
-          this.sharepicker.share('image/png', {
-            name: this.getScreenshotFilename(), 
-            image: imagedata, 
-            encoding: 'base64',
-            album: 'VRcade Screenshots'
-          });
-        }
-      }
-    }
-    this.getScreenshotFilename = function(extension) {
-      if (!extension) extension = 'png';
-      var now = new Date();
-      function pad(n) {
-        if (n < 10) return '0' + n;
-        return n;
-      }
-      var date = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
-      var time = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
-      var filename = 'vrcade-' + date + ' ' + time + '.' + extension
-      return filename;
-    }
   }, elation.engine.things.generic);
 });
