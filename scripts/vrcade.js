@@ -2,36 +2,38 @@ elation.require([
     "ui.spinner", "ui.loader", "ui.tabbedcontent", "ui.slider", "ui.toggle", "ui.list", "ui.label",
     "engine.engine", "engine.external.three.tween", "engine.things.camera", "engine.things.menu",
     "vrcade.vrcadeplayer", "vrcade.arcadecabinet", "vrcade.arcademachine", "vrcade.arcadeposter",
-    "share.share", "share.targets.imgur", "share.targets.dropbox", "share.targets.google"
+    "share.picker", "share.targets.imgur", "share.targets.dropbox", "share.targets.googledrive", "share.targets.youtube",
   ], function() {
 
   //elation.template.add('vrcade.intro', '<div data-elation-component="ui.spinner" data-elation-args.label="loading" data-elation-args.type="dark"></div>');
 
   elation.component.add('vrcade', function() {
     this.initWorld = function() {
-      this.world.setFog(1, 50, 0x111111);
+      this.world.setFog(1, 250, 0x111111);
       this.world.setSky('/media/vrcade/textures/skybox', 'jpg', ['p', 'n']);
 
-      this.vrcade = this.world.spawn('vrcade', 'vrcade');
+      setTimeout(elation.bind(this, function() {
+        this.vrcade = this.world.spawn('vrcade', 'default');
 
-      var playerpos = [-16.941,0,-24.576];
-      //var playerpos = [0,2.4,0];
-      this.player = this.vrcade.spawn('vrcadeplayer', 'player', { 
-        position: playerpos,
-        startposition: playerpos,
-        orientation: [0, 0.93664, 0, -0.35030], 
-        mass: 20, 
-        height: 2 
-      });
-
-      this.view.setactivething(this.player);
+        var playerpos = [-16.941,0,-24.576];
+        //var playerpos = [0,0,0];
+        this.player = this.vrcade.spawn('vrcadeplayer', 'player', { 
+          position: playerpos,
+          startposition: playerpos,
+          orientation: [0, 0.93664, 0, -0.35030], 
+          mass: 20, 
+          height: 2 
+        });
+        this.view.setactivething(this.player);
+        this.showMenu();
+      }), 0);
       this.loader = elation.ui.loader({
         append: this,
         right: true,
         bottom: true
       });
 
-      this.showMenu();
+      //this.showMenu();
       //elation.events.add(this.loader, 'ui_loader_finish', elation.bind(this.gameobj, this.gameobj.handleLoaderFinished));
     }
     this.startGame = function() {
@@ -42,6 +44,10 @@ elation.require([
       this.hideMenu();
     }
     this.showAbout = function() {
+      var aboutwin = elation.ui.window({append: document.body, center: true, title: 'VRcade Blog'});
+      var frame = elation.ui.iframe({src: 'http://blog.vrcade.io/', classname: 'vrcade_about'});
+      aboutwin.setcontent(frame);
+      console.log(aboutwin, frame);
     }
   }, elation.engine.client);
 
@@ -69,21 +75,27 @@ elation.require([
       this.vrcadesign = this.spawn('generic', 'vrcadesign', {
         "position": [0,0,0],
         "render.collada": "/media/vrcade/models/flynns-v5/flynns-sign.dae",
-        "scale": [.3048, .3048, .3048]
+        //"scale": [.3048, .3048, .3048],
+        "wireframe": false,
+      });
+      this.mountains = this.spawn('generic', 'mountains', {
+        "render.collada": "/media/vrcade/models/mountains/mountains.dae",
+        "fog": false,
+        "wireframe": false,
+        "color": 0x333333,
+        "position": [0, -50, 0]
       });
 
     }
     this.create_lights = function() {
       var lights = [];
-/*
       lights.push(this.spawn('light', 'sun', {
         "position":[50,30,-30],
         "persist":false,
         "type":"directional",
-        "intensity":0.6,
+        "intensity":0.2,
         //"velocity":[0,0,0.05]
       }));
-*/
       /*
       lights.push(this.spawn('light', 'sun2', {
         "position":[-50,-30,-30],
@@ -93,6 +105,7 @@ elation.require([
         //"velocity":[0,0,0.05]
       }));
       */
+/*
       lights.push(this.spawn('light', 'point01', {
         "position":[-10,20,10],
         "persist":false,
@@ -104,22 +117,27 @@ elation.require([
         "position":[20,10,32],
         "persist":false,
         "type":"point",
-        "intensity": .4,
-        "color":0xcccccc,
+        "intensity": .1,
+        "color":0xffffff,
       }));
+*/
+/*
       lights.push(this.spawn('light', 'point03', {
         "position":[0,10,-30],
         "persist":false,
         "type":"point",
-        "intensity": .4,
+        "intensity": .1,
         "color":0xcccccc,
       }));
+*/
+/*
       lights.push(this.spawn('light', 'ambient', {
         "position":[0,0,0],
         "persist":false,
         "type":"ambient",
-        "color":0xffffff,
+        "color":0x060606,
       }));
+*/
 
       return lights;
     }
@@ -190,26 +208,37 @@ elation.require([
     }
     this.loadGame = function() {
       this.collidermesh = this.spawn('generic', 'collider', {
-        //"render.collada": "/media/vrcade/models/flynns-v5/flynns-collider.dae",
-        "render.scene": "/media/vrcade/models/flynns-v5/flynns-collider.json",
-        "scale": [.3048, .3048, .3048]
+        "render.collada": "/media/vrcade/models/flynns-v5/flynns-collider.dae",
+        //"render.scene": "/media/vrcade/models/flynns-v5/flynns-collider.json",
+        //"scale": [., .3048, .3048],
+        //"orientation": new THREE.Quaternion().setFromEuler(new THREE.Euler(0, Math.PI, 0))
       });
+/*
       this.neighborhood = this.spawn('generic', 'neighborhood', {
         "render.collada": "/media/vrcade/models/flynns-v5/flynns-neighborhood.dae",
-        "scale": [.3048, .3048, .3048]
+        //"scale": [.3048, .3048, .3048]
+      });
+      var measuringcube = this.spawn('generic', 'measuringcube', {
+        "render.collada": "/media/vrcade/models/measuringcube/measuringcube.dae",
+      });
+      var measuringcube2 = this.spawn('generic', 'measuringcube2', {
+        "render.collada": "/media/vrcade/models/measuringcube/measuringcube.dae",
+        position: [0, 1, 0]
       });
       this.exterior = this.spawn('generic', 'exterior', {
         "position": [0,0,0],
         "render.collada": "/media/vrcade/models/flynns-v5/flynns-exterior.dae",
-        "scale": [.3048, .3048, .3048]
+        //"scale": [.3048, .3048, .3048]
       });
       this.interior = this.spawn('generic', 'interior', {
         "position": [0,0,0],
         "render.collada": "/media/vrcade/models/flynns-v5/flynns-interior.dae",
-        "scale": [.3048, .3048, .3048]
+        //"scale": [.3048, .3048, .3048]
       });
 
       elation.events.add(this.interior, 'thing_load', elation.bind(this, this.load_games));
+*/
+      this.load_games();
     }
     this.loadTheater = function() {
       this.theater = this.spawn('generic', 'theater', {
