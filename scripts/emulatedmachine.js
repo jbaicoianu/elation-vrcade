@@ -96,12 +96,13 @@ elation.require(['engine.things.generic', 'engine.geometries', 'vrcade.external.
       var gamename = this.properties.gamename,
           rendercanvas = this.engine.systems.render.renderer.domElement,
           system = new JSMESSLoader({
-            executable: '/media/vrcade/systems/arcade/messvrcade.js',
+            executable: this.properties.executable,
             //gamename: gamename,
             exportname: 'JSMESSVRCADE',
             capturemouse: true,
             canvas: rendercanvas,
             resolution: resolution,
+            useWebGL: true,
             autostart: false,
             //verbose: true
           });
@@ -236,7 +237,7 @@ console.log('unpause it!', this.running, this.paused);
       var tex = elation.engine.materials.getTexture(texurl);
       if (tex) {
         var oldmat = this.parts['cabinet-marquee'].children[0].material;
-        this.parts['cabinet-marquee'].children[0].material = new THREE.MeshPhongMaterial({
+        this.parts['cabinet-marquee'].children[0].material = new THREE.MeshBasicMaterial({
           map: tex,
         });
 
@@ -351,16 +352,15 @@ alert('no guy: ' + this.properties.gamename);
       }
     }
     this.useFocus = function(ev) {
-      console.log('focus:', this.properties.gamename);
+      //console.log('focus:', this.properties.gamename);
     }
     this.useBlur = function(ev) {
-      console.log('blur:', this.properties.gamename, this.running);
+      //console.log('blur:', this.properties.gamename, this.running);
       if (this.running) {
         this.pause();
       }
       this.user = false;
       if (this.updateinterval) {
-console.log('clear the timer');
         clearTimeout(this.updateinterval);
         this.updateinterval = false;
       }
@@ -372,17 +372,16 @@ console.log('clear the timer');
 
         if (!this.updateinterval) {
           this.updateinterval = setInterval(elation.bind(this, this.triggerUpdate), 1000/60);
-  console.log('ADD A TIMER:', this.updateinterval);
         }
       }
     }
     this.triggerOn = function(ev) {
-      console.log(this.id + ': should I start?', ev);
+      //console.log(this.id + ': should I start?', ev);
       this.addTag('usable');
       //elation.events.add(this, 'mouseover', foo);
     }
     this.triggerOff = function() {
-      console.log(this.id + ': nope!');
+      //console.log(this.id + ': nope!');
       this.removeTag('usable');
     }
     this.triggerUpdate = function() {
