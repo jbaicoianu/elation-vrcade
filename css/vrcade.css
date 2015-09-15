@@ -1,7 +1,53 @@
+@font-face {
+  font-family: "Mexcellent";
+  src: url(/media/vrcade/fonts/Mexcellent.ttf);
+}
 .ui_window.vrcade_intro {
   min-width: 20em;
 }
 .ui_window.vrcade_intro .ui_window_titlebar {
   font-size: 1.2em;
   text-align: center;
+}
+h1.logo {
+  font-family: Mexcellent;
+  color: orange;
+  font-size: 4em;
+  font-weight: normal;
+  text-align: center;
+}
+.signup h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.signup {
+  max-width: 50em;
+  margin: 5em auto;
+  background: rgba(0,0,0,.5);
+  border: 2px solid orange;
+  border-radius: 4px;
+  box-shadow: 0 0 50px rgba(0,0,0,.9);
+  padding: 2em;
+}
+.signup form {
+  margin: 2em 0;
+  text-align: center;
+}
+.signup form input {
+  font-size: 1.5em;
+  padding: .2em .4em;
+}
+.signup form input[type=text] {
+  border-radius: .5em 0 0 .5em;
+  border: 0;
+}
+.signup form input[type=submit] {
+  border-radius: 0 .5em .5em 0;
+  background: orange;
+  border: 0;
+}
+.ui_window .ui_window_content.vrcade_about {
+  min-width: 640px;
+  min-height: 480px;
 }
