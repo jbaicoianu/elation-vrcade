@@ -1,0 +1,12 @@
+uniform float iGlobalTime;
+uniform mat4 iModelMatrix;
+uniform mat4 iViewMatrix;
+
+void main(void) {
+  vec4 position = vec4(gl_ModelViewMatrix * gl_Vertex);
+
+  position.x = sin(iGlobalTime) + position.x;
+
+  gl_Position = gl_ProjectionMatrix * position;
+}
+
