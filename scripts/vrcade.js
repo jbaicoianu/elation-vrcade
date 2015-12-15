@@ -15,7 +15,7 @@ elation.require([
       setTimeout(elation.bind(this, function() {
         this.vrcade = this.world.spawn('vrcade', 'default');
 
-        var playerpos = [-16.941,0,-24.576];
+        var playerpos = [-13.15,0,-20.576];
         //var playerpos = [0,0,0];
         this.player = this.vrcade.spawn('vrcadeplayer', 'player', { 
           position: playerpos,
@@ -68,12 +68,11 @@ elation.require([
     }
 
     this.createChildren = function() {
-
       this.lights = this.create_lights();
       elation.engine.geometries.loadMeshFromURL('cabinet-default', '/media/vrcade/models/cabinet/cabinet.dae');
 
       this.vrcadesign = this.spawn('generic', 'vrcadesign', {
-        "position": [0,0,0],
+        "position": [-2.63,4.8,-8.6],
         "render.collada": "/media/vrcade/models/flynns-v5/flynns-sign.dae",
         //"scale": [.3048, .3048, .3048],
         "wireframe": false,
@@ -83,7 +82,7 @@ elation.require([
         "fog": false,
         "wireframe": false,
         "color": 0x333333,
-        "position": [0, -50, 0]
+        "position": [0, -5, 0]
       });
 
     }
@@ -135,7 +134,7 @@ elation.require([
         "position":[0,0,0],
         "persist":false,
         "type":"ambient",
-        "color":0x060606,
+        "color":0x111111,
       }));
 */
 
