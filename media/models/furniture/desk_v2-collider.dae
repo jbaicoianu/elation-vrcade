@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.76.0 commit date:2015-11-03, commit time:10:56, hash:f337fea</authoring_tool>
+    </contributor>
+    <created>2016-01-31T04:02:19</created>
+    <modified>2016-01-31T04:02:19</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="_collider-box-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0 1</color>
+            </diffuse>
+            <transparency>
+              <float sid="transparency">0</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="_collider-box-material" name="_collider-box">
+      <instance_effect url="#_collider-box-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cube-mesh" name="Cube">
+      <mesh>
+        <source id="Cube-mesh-positions">
+          <float_array id="Cube-mesh-positions-array" count="24">0.3961225 0.9306237 -0.02340453 0.3961225 0.9306237 0.02340453 0.3961219 -0.930624 -0.02340453 0.3961219 -0.930624 0.02340453 -0.3961219 0.930624 -0.02340453 -0.3961219 0.930624 0.02340453 -0.3961225 -0.9306237 -0.02340453 -0.3961225 -0.9306237 0.02340453</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh-normals">
+          <float_array id="Cube-mesh-normals-array" count="33">1 -3.4207e-7 0 -3.00941e-7 -1 0 -1 3.4207e-7 0 3.00941e-7 1 0 0 0 -1 0 0 1 1 -2.99312e-7 0 -3.00941e-7 -1 0 -1 2.99312e-7 0 3.00941e-7 1 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube-mesh-vertices">
+          <input semantic="POSITION" source="#Cube-mesh-positions"/>
+        </vertices>
+        <polylist material="_collider-box-material" count="12">
+          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 0 0 7 1 6 1 2 1 5 2 4 2 6 2 1 3 0 3 4 3 2 4 6 4 4 4 5 5 7 5 3 5 1 6 3 6 0 6 3 7 7 7 2 7 7 8 5 8 6 8 5 9 1 9 4 9 0 4 2 4 4 4 1 10 5 10 3 10</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cube_001-mesh" name="Cube.001">
+      <mesh>
+        <source id="Cube_001-mesh-positions">
+          <float_array id="Cube_001-mesh-positions-array" count="24">0.3576089 -0.0317887 -0.5204574 0.3576089 0.03178858 -0.5204574 0.3576089 -0.03178882 0.5204574 0.3576089 0.03178846 0.5204574 -0.3576089 -0.03178846 -0.5204574 -0.3576089 0.03178882 -0.5204574 -0.3576089 -0.03178858 0.5204574 -0.3576089 0.0317887 0.5204574</float_array>
+          <technique_common>
+            <accessor source="#Cube_001-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_001-mesh-normals">
+          <float_array id="Cube_001-mesh-normals-array" count="30">1 0 0 0 0 1 -1 0 0 0 0 -1 -3.22934e-7 -1 0 3.17725e-7 1 0 -1.63851e-7 0 1 1.63851e-7 0 -1 -3.17725e-7 -1 0 3.22934e-7 1 0</float_array>
+          <technique_common>
+            <accessor source="#Cube_001-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_001-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_001-mesh-positions"/>
+        </vertices>
+        <polylist material="_collider-box-material" count="12">
+          <input semantic="VERTEX" source="#Cube_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_001-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 0 0 3 1 7 1 6 1 7 2 5 2 4 2 1 3 0 3 4 3 2 4 6 4 4 4 7 5 3 5 1 5 1 0 3 0 0 0 2 6 3 6 6 6 6 2 7 2 4 2 5 7 1 7 4 7 0 8 2 8 4 8 5 9 7 9 1 9</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cube_002-mesh" name="Cube.002">
+      <mesh>
+        <source id="Cube_002-mesh-positions">
+          <float_array id="Cube_002-mesh-positions-array" count="24">0.3585203 -0.2822962 -0.5204574 0.3585206 0.2822969 -0.5204574 0.3585203 -0.2822971 0.5204574 0.3585206 0.2822959 0.5204574 -0.3585206 -0.2822959 -0.5204574 -0.3585203 0.2822971 -0.5204574 -0.3585206 -0.2822969 0.5204574 -0.3585203 0.2822962 0.5204574</float_array>
+          <technique_common>
+            <accessor source="#Cube_002-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_002-mesh-normals">
+          <float_array id="Cube_002-mesh-normals-array" count="36">1 -3.04264e-7 0 0 0 1 -1 3.04264e-7 0 0 0 -1 -3.32503e-7 -1 -9.18372e-7 3.74066e-7 1 9.18372e-7 1 -4.05685e-7 0 -1.47231e-7 0 1 -1 4.05685e-7 0 0 0 -1 -3.74066e-7 -1 -9.18372e-7 3.32503e-7 1 9.18372e-7</float_array>
+          <technique_common>
+            <accessor source="#Cube_002-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_002-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_002-mesh-positions"/>
+        </vertices>
+        <polylist material="_collider-box-material" count="12">
+          <input semantic="VERTEX" source="#Cube_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_002-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 0 0 7 1 6 1 2 1 7 2 5 2 4 2 1 3 0 3 4 3 2 4 6 4 4 4 7 5 3 5 1 5 1 6 3 6 0 6 3 7 7 7 2 7 6 8 7 8 4 8 5 9 1 9 4 9 0 10 2 10 4 10 5 11 7 11 1 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cube_003-mesh" name="Cube.003">
+      <mesh>
+        <source id="Cube_003-mesh-positions">
+          <float_array id="Cube_003-mesh-positions-array" count="24">0.01462763 -0.5806988 -0.520459 0.01462799 0.5807008 -0.520459 0.01462763 -0.5807008 0.520459 0.01462799 0.5806988 0.520459 -0.01462799 -0.5806988 -0.520459 -0.01462763 0.5807008 -0.520459 -0.01462799 -0.5807008 0.520459 -0.01462763 0.5806988 0.520459</float_array>
+          <technique_common>
+            <accessor source="#Cube_003-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_003-mesh-normals">
+          <float_array id="Cube_003-mesh-normals-array" count="24">1 -3.26639e-7 0 0 0 1 -1 3.26639e-7 0 0 0 -1 0 -1 -1.83495e-6 0 1 1.95728e-6 0 -1 -1.95728e-6 0 1 1.83495e-6</float_array>
+          <technique_common>
+            <accessor source="#Cube_003-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_003-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_003-mesh-positions"/>
+        </vertices>
+        <polylist material="_collider-box-material" count="12">
+          <input semantic="VERTEX" source="#Cube_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_003-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 0 0 7 1 6 1 2 1 7 2 5 2 4 2 1 3 0 3 4 3 2 4 6 4 4 4 7 5 3 5 1 5 1 0 3 0 0 0 3 1 7 1 2 1 6 2 7 2 4 2 5 3 1 3 4 3 0 6 2 6 4 6 5 7 7 7 1 7</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="collider-desk-box_001" name="collider-desk-box_001" type="NODE">
+        <matrix sid="transform">1 0 0 0.2829761 0 1 0 0.151988 0 0 1 1.069833 0 0 0 1</matrix>
+        <instance_geometry url="#Cube-mesh" name="collider-desk-box_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_collider-box-material" target="#_collider-box-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="collider-desk-box_000" name="collider-desk-box_000" type="NODE">
+        <matrix sid="transform">1 0 0 0.2669769 0 1 0 0.9980459 0 0 1 0.5192361 0 0 0 1</matrix>
+        <instance_geometry url="#Cube_001-mesh" name="collider-desk-box_000">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_collider-box-material" target="#_collider-box-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="collider-desk-box_002" name="collider-desk-box_002" type="NODE">
+        <matrix sid="transform">1 0 0 0.26332 0 1 0 -0.4564358 0 0 1 0.5192361 0 0 0 1</matrix>
+        <instance_geometry url="#Cube_002-mesh" name="collider-desk-box_002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_collider-box-material" target="#_collider-box-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="collider-desk-box_003" name="collider-desk-box_003" type="NODE">
+        <matrix sid="transform">1 0 0 0.6118304 0 1 0 0.3922812 0 0 1 0.5192361 0 0 0 1</matrix>
+        <instance_geometry url="#Cube_003-mesh" name="collider-desk-box_003">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_collider-box-material" target="#_collider-box-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,19 +1,46 @@
 [
     {
+        "name": "mountains",
+        "properties": {
+            "loadorder": 0,
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                -39.40407943725586,
+                -0.07415027171373367,
+                15.691021919250488
+            ],
+            "render.collada": "/media/vrcade/models/mountains/mountains.dae",
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
         "name": "neighborhood",
         "properties": {
+            "collider.collada": "/media/vrcade/models/flynns-v5/flynns-neighborhood-collider.dae",
             "loadorder": 1,
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -1.0,
                 0.0,
-                -4.371138828673793e-08
+                0.0,
+                1.0
             ],
             "position": [
-                -0.0,
                 0.0,
-                0.0
+                0.0,
+                -0.0
             ],
             "render.collada": "/media/vrcade/models/flynns-v5/flynns-neighborhood.dae",
             "scale": [
@@ -28,18 +55,19 @@
     {
         "name": "exterior",
         "properties": {
+            "collider.collada": "/media/vrcade/models/flynns-v5/flynns-exterior-collider.dae",
             "loadorder": 2,
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -1.0,
                 0.0,
-                -4.371138828673793e-08
+                0.0,
+                1.0
             ],
             "position": [
-                -0.0,
                 0.0,
-                0.0
+                0.0,
+                -0.0
             ],
             "render.collada": "/media/vrcade/models/flynns-v5/flynns-exterior.dae",
             "scale": [
@@ -54,20 +82,73 @@
     {
         "name": "interior",
         "properties": {
+            "collider.collada": "/media/vrcade/models/flynns-v5/flynns-interior-collider.dae",
             "loadorder": 3,
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -1.0,
                 0.0,
-                -4.371138828673793e-08
+                0.0,
+                1.0
             ],
             "position": [
-                -0.0,
                 0.0,
-                0.0
+                0.0,
+                -0.0
             ],
             "render.collada": "/media/vrcade/models/flynns-v5/flynns-interior.dae",
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "dumpster.000",
+        "properties": {
+            "collider.collada": "/media/vrcade/models/dumpster/dumpster-collider.dae",
+            "mass": 1.0,
+            "orientation": [
+                3.0908619663705394e-08,
+                0.7071067690849304,
+                -3.0908619663705394e-08,
+                0.7071067690849304
+            ],
+            "position": [
+                -10.247380256652832,
+                -0.10044000297784805,
+                2.966405153274536
+            ],
+            "render.collada": "/media/vrcade/models/dumpster/dumpster.dae",
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "bookcase",
+        "properties": {
+            "collider.collada": "/media/vrcade/models/furniture/bookcase-collider.dae",
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                -6.438302516937256,
+                2.7610926628112793,
+                -8.681722640991211
+            ],
+            "render.collada": "/media/vrcade/models/furniture/bookcase.dae",
             "scale": [
                 1.0,
                 1.0,
@@ -82,15 +163,15 @@
         "properties": {
             "mass": 1.0,
             "orientation": [
-                -6.181724643283815e-08,
-                -0.7071067690849304,
                 6.181724643283815e-08,
-                -0.7071067690849304
+                0.7071067690849304,
+                -6.181724643283815e-08,
+                0.7071067690849304
             ],
             "position": [
-                10.269808769226074,
+                -10.269808769226074,
                 3.0480000972747803,
-                -7.781999588012695
+                7.781999588012695
             ],
             "render.collada": "/media/vrcade/models/basketball/basketball-hoop.dae",
             "scale": [
@@ -105,17 +186,18 @@
     {
         "name": "dumpster.001",
         "properties": {
+            "collider.collada": "/media/vrcade/models/dumpster/dumpster-collider.dae",
             "mass": 1.0,
             "orientation": [
-                -3.0908619663705394e-08,
-                -0.7071067690849304,
                 3.0908619663705394e-08,
-                -0.7071067690849304
+                0.7071067690849304,
+                -3.0908619663705394e-08,
+                0.7071067690849304
             ],
             "position": [
-                10.247380256652832,
+                -10.247380256652832,
                 -0.10044000297784805,
-                -4.951519966125488
+                4.951519966125488
             ],
             "render.collada": "/media/vrcade/models/dumpster/dumpster.dae",
             "scale": [
@@ -130,44 +212,20 @@
     {
         "name": "archivetruck",
         "properties": {
+            "collider.collada": "/media/vrcade/models/archivetruck/archivetruck-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.999879002571106,
+                0.015553880482912064,
                 0.0,
-                -0.015553844161331654
+                0.999879002571106
             ],
             "position": [
-                14.420869827270508,
+                -14.420869827270508,
                 -0.1067499965429306,
-                2.0512800216674805
+                -2.0512800216674805
             ],
             "render.collada": "/media/vrcade/models/archivetruck/archivetruck.dae",
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "type": "generic"
-        },
-        "type": "generic"
-    },
-    {
-        "name": "dumpster",
-        "properties": {
-            "mass": 1.0,
-            "orientation": [
-                -6.181723932741079e-08,
-                -0.7071067690849304,
-                6.181723932741079e-08,
-                -0.7071067690849304
-            ],
-            "position": [
-                10.247380256652832,
-                -0.10044000297784805,
-                -2.9515199661254883
-            ],
-            "render.collada": "/media/vrcade/models/dumpster/dumpster.dae",
             "scale": [
                 1.0,
                 1.0,
@@ -185,12 +243,12 @@
                 0.0,
                 -0.7071067690849304,
                 0.0,
-                0.7071067690849304
+                0.7071068286895752
             ],
             "position": [
-                6.574269771575928,
+                -6.574269771575928,
                 2.7513198852539062,
-                6.607870101928711
+                -6.607870101928711
             ],
             "render.collada": "/media/vrcade/models/furniture/bluedeskchair.dae",
             "scale": [
@@ -203,19 +261,45 @@
         "type": "generic"
     },
     {
-        "name": "ibmpc",
+        "name": "ti85",
         "properties": {
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071067690849304,
+                0.7071067690849304,
                 0.0,
-                -0.7071067690849304
+                0.7071067690849304
             ],
             "position": [
-                5.930799961090088,
+                -6.356200218200684,
+                3.8640599250793457,
+                -5.737030029296875
+            ],
+            "render.collada": "/media/vrcade/models/ti85/ti85.dae",
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
+    },
+    {
+        "name": "ibmpc",
+        "properties": {
+            "collider.collada": "/media/vrcade/models/ibmpc/ibmpc-collider.dae",
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.7071067690849304,
+                0.0,
+                0.7071067690849304
+            ],
+            "position": [
+                -5.930799961090088,
                 3.846369981765747,
-                6.480259895324707
+                -6.480259895324707
             ],
             "render.collada": "/media/vrcade/models/ibmpc/ibmpc.dae",
             "scale": [
@@ -230,17 +314,18 @@
     {
         "name": "officedesk",
         "properties": {
+            "collider.collada": "/media/vrcade/models/furniture/desk_v2-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -1.0,
                 0.0,
-                -4.371138828673793e-08
+                0.0,
+                1.0
             ],
             "position": [
-                6.320109844207764,
+                -6.320109844207764,
                 2.7725300788879395,
-                6.215350151062012
+                -6.215350151062012
             ],
             "render.collada": "/media/vrcade/models/furniture/desk_v2.dae",
             "scale": [
@@ -257,15 +342,15 @@
         "properties": {
             "mass": 1.0,
             "orientation": [
-                -1.4242977592693676e-14,
-                3.2584136988589307e-07,
                 -4.371138473402425e-08,
-                -1.0
+                1.0,
+                -1.233229149225426e-14,
+                -2.821299744937278e-07
             ],
             "position": [
-                -2.263293981552124,
+                2.263293981552124,
                 1.5608266592025757,
-                -5.520101547241211
+                5.520101547241211
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -282,15 +367,15 @@
         "properties": {
             "mass": 1.0,
             "orientation": [
-                3.0908619663705394e-08,
-                -0.7071067690849304,
                 -3.0908619663705394e-08,
-                -0.7071067690849304
+                0.7071067690849304,
+                3.0908619663705394e-08,
+                0.7071067690849304
             ],
             "position": [
-                0.42740488052368164,
+                -0.42740488052368164,
                 1.5608266592025757,
-                -8.252484321594238
+                8.252484321594238
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -310,12 +395,12 @@
                 0.0,
                 -0.7071067690849304,
                 0.0,
-                0.7071068286895752
+                0.7071067690849304
             ],
             "position": [
-                10.02958869934082,
+                -10.02958869934082,
                 1.5608266592025757,
-                3.924271583557129
+                -3.924271583557129
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -335,12 +420,12 @@
                 0.0,
                 -0.7071067690849304,
                 0.0,
-                0.7071068286895752
+                0.7071067690849304
             ],
             "position": [
-                10.02958869934082,
+                -10.02958869934082,
                 1.5608266592025757,
-                -5.180087089538574
+                5.180087089538574
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -357,15 +442,15 @@
         "properties": {
             "mass": 1.0,
             "orientation": [
-                1.2300169461795536e-14,
-                -1.0,
                 -7.549790126404332e-08,
-                -1.6292068494294654e-07
+                1.6292068494294654e-07,
+                1.2300169461795536e-14,
+                1.0
             ],
             "position": [
-                1.9884769916534424,
+                -1.9884769916534424,
                 1.5608266592025757,
-                9.025823593139648
+                -9.025823593139648
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -382,15 +467,15 @@
         "properties": {
             "mass": 1.0,
             "orientation": [
-                1.2300169461795536e-14,
-                -1.0,
                 -7.549790126404332e-08,
-                -1.6292068494294654e-07
+                1.6292068494294654e-07,
+                1.2300169461795536e-14,
+                1.0
             ],
             "position": [
-                3.1130471229553223,
+                -3.1130471229553223,
                 1.5608266592025757,
-                9.025823593139648
+                -9.025823593139648
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -407,15 +492,15 @@
         "properties": {
             "mass": 1.0,
             "orientation": [
-                1.2300169461795536e-14,
-                -1.0,
                 -7.549790126404332e-08,
-                -1.6292068494294654e-07
+                1.6292068494294654e-07,
+                1.2300169461795536e-14,
+                1.0
             ],
             "position": [
-                4.241485595703125,
+                -4.241485595703125,
                 1.5608266592025757,
-                9.025823593139648
+                -9.025823593139648
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -435,12 +520,12 @@
                 0.0,
                 -0.7071067690849304,
                 0.0,
-                0.7071068286895752
+                0.7071067690849304
             ],
             "position": [
-                10.02958869934082,
+                -10.02958869934082,
                 1.5608266592025757,
-                2.2920045852661133
+                -2.2920045852661133
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -460,12 +545,12 @@
                 0.0,
                 -0.7071067690849304,
                 0.0,
-                0.7071068286895752
+                0.7071067690849304
             ],
             "position": [
-                10.02958869934082,
+                -10.02958869934082,
                 1.5608266592025757,
-                -6.32246732711792
+                6.32246732711792
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -485,12 +570,12 @@
                 0.0,
                 -0.7071067690849304,
                 0.0,
-                0.7071068286895752
+                0.7071067690849304
             ],
             "position": [
-                10.02958869934082,
+                -10.02958869934082,
                 1.5608266592025757,
-                -7.4760823249816895
+                7.4760823249816895
             ],
             "render.collada": "/media/vrcade/models/poster/poster.dae",
             "scale": [
@@ -505,17 +590,18 @@
     {
         "name": "skeeball.007",
         "properties": {
+            "collider.collada": "/media/vrcade/models/skeeball/skeeball-collider.dae",
             "mass": 1.0,
             "orientation": [
-                7.121488796346838e-15,
-                -1.0,
                 -4.371138828673793e-08,
-                -1.6292068494294654e-07
+                1.4702742134886648e-07,
+                6.426772701799595e-15,
+                1.0
             ],
             "position": [
-                7.596109867095947,
+                -7.596109867095947,
                 0.06477871537208557,
-                8.917675971984863
+                -8.917675971984863
             ],
             "render.collada": "/media/vrcade/models/skeeball/skeeball.dae",
             "scale": [
@@ -530,17 +616,18 @@
     {
         "name": "skeeball.006",
         "properties": {
+            "collider.collada": "/media/vrcade/models/skeeball/skeeball-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -1.0,
                 0.0,
-                -4.371138828673793e-08
+                0.0,
+                1.0
             ],
             "position": [
-                8.781593322753906,
+                -8.781593322753906,
                 0.06477871537208557,
-                8.917675971984863
+                -8.917675971984863
             ],
             "render.collada": "/media/vrcade/models/skeeball/skeeball.dae",
             "scale": [
@@ -555,17 +642,18 @@
     {
         "name": "skeeball",
         "properties": {
+            "collider.collada": "/media/vrcade/models/skeeball/skeeball-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -1.0,
                 0.0,
-                -4.371138828673793e-08
+                0.0,
+                1.0
             ],
             "position": [
-                9.97170639038086,
+                -9.97170639038086,
                 0.06477871537208557,
-                8.917675971984863
+                -8.917675971984863
             ],
             "render.collada": "/media/vrcade/models/skeeball/skeeball.dae",
             "scale": [
@@ -580,17 +668,18 @@
     {
         "name": "ArcadeMachine15",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                1.820997953414917,
+                -1.820997953414917,
                 0.06355486810207367,
-                0.4919700622558594
+                -0.4919700622558594
             ],
             "scale": [
                 1.0,
@@ -604,17 +693,19 @@
     {
         "name": "ArcadeMachine23",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
+            "collider.mesh": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
-                -4.371138828673793e-08,
-                1.0,
-                -4.371138828673793e-08,
-                4.371139183945161e-08
+                0.0,
+                -1.0,
+                0.0,
+                -4.371138828673793e-08
             ],
             "position": [
-                4.473299026489258,
+                -4.473299026489258,
                 0.06355486810207367,
-                -9.847150802612305
+                9.847150802612305
             ],
             "scale": [
                 1.0,
@@ -628,17 +719,18 @@
     {
         "name": "ArcadeMachine22",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
-                -4.371138828673793e-08,
-                1.0,
-                -4.371138828673793e-08,
-                4.371139183945161e-08
+                0.0,
+                -1.0,
+                0.0,
+                -4.371138828673793e-08
             ],
             "position": [
-                5.278156757354736,
+                -5.278156757354736,
                 0.06355486810207367,
-                -9.847150802612305
+                9.847150802612305
             ],
             "scale": [
                 1.0,
@@ -652,17 +744,18 @@
     {
         "name": "ArcadeMachine21",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
-                -4.371138828673793e-08,
-                1.0,
-                -4.371138828673793e-08,
-                4.371139183945161e-08
+                0.0,
+                -1.0,
+                0.0,
+                -4.371138828673793e-08
             ],
             "position": [
-                6.083014965057373,
+                -6.083014965057373,
                 0.06355486810207367,
-                -9.847150802612305
+                9.847150802612305
             ],
             "scale": [
                 1.0,
@@ -676,17 +769,18 @@
     {
         "name": "ArcadeMachine20",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
-                -4.371138828673793e-08,
-                1.0,
-                -4.371138828673793e-08,
-                4.371139183945161e-08
+                0.0,
+                -1.0,
+                0.0,
+                -4.371138828673793e-08
             ],
             "position": [
-                6.887871265411377,
+                -6.887871265411377,
                 0.06355486810207367,
-                -9.847150802612305
+                9.847150802612305
             ],
             "scale": [
                 1.0,
@@ -700,17 +794,18 @@
     {
         "name": "ArcadeMachine19",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
-                -4.371138828673793e-08,
-                1.0,
-                -4.371138828673793e-08,
-                4.371139183945161e-08
+                0.0,
+                -1.0,
+                0.0,
+                -4.371138828673793e-08
             ],
             "position": [
-                7.692729473114014,
+                -7.692729473114014,
                 0.06355486810207367,
-                -9.847150802612305
+                9.847150802612305
             ],
             "scale": [
                 1.0,
@@ -724,17 +819,18 @@
     {
         "name": "ArcadeMachine18",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
-                -4.371138828673793e-08,
-                1.0,
-                -4.371138828673793e-08,
-                4.371139183945161e-08
+                0.0,
+                -1.0,
+                0.0,
+                -4.371138828673793e-08
             ],
             "position": [
-                8.497587203979492,
+                -8.497587203979492,
                 0.06355486810207367,
-                -9.847150802612305
+                9.847150802612305
             ],
             "scale": [
                 1.0,
@@ -748,17 +844,18 @@
     {
         "name": "ArcadeMachine12",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                1.820997953414917,
+                -1.820997953414917,
                 0.06355486810207367,
-                -1.9226031303405762
+                1.9226031303405762
             ],
             "scale": [
                 1.0,
@@ -772,17 +869,18 @@
     {
         "name": "ArcadeMachine13",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                1.820997953414917,
+                -1.820997953414917,
                 0.06355486810207367,
-                -1.1177453994750977
+                1.1177453994750977
             ],
             "scale": [
                 1.0,
@@ -796,17 +894,18 @@
     {
         "name": "ArcadeMachine14",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                1.820997953414917,
+                -1.820997953414917,
                 0.06355486810207367,
-                -0.31288766860961914
+                0.31288766860961914
             ],
             "scale": [
                 1.0,
@@ -820,17 +919,18 @@
     {
         "name": "ArcadeMachine16",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                1.820997953414917,
+                -1.820997953414917,
                 0.06355486810207367,
-                1.296828269958496
+                -1.296828269958496
             ],
             "scale": [
                 1.0,
@@ -844,17 +944,18 @@
     {
         "name": "ArcadeMachine17",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                1.820997953414917,
+                -1.820997953414917,
                 0.06355486810207367,
-                2.1016855239868164
+                -2.1016855239868164
             ],
             "scale": [
                 1.0,
@@ -868,17 +969,18 @@
     {
         "name": "ArcadeMachine6",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071065902709961,
+                -0.7071067690849304,
                 0.0,
-                -0.7071069478988647
+                0.7071067690849304
             ],
             "position": [
-                1.1102805137634277,
+                -1.1102805137634277,
                 0.06355486810207367,
-                -1.9226031303405762
+                1.9226031303405762
             ],
             "scale": [
                 1.0,
@@ -892,17 +994,18 @@
     {
         "name": "ArcadeMachine7",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071065902709961,
+                -0.7071067690849304,
                 0.0,
-                -0.7071069478988647
+                0.7071067690849304
             ],
             "position": [
-                1.1102805137634277,
+                -1.1102805137634277,
                 0.06355486810207367,
-                -1.1177453994750977
+                1.1177453994750977
             ],
             "scale": [
                 1.0,
@@ -916,17 +1019,18 @@
     {
         "name": "ArcadeMachine8",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071065902709961,
+                -0.7071067690849304,
                 0.0,
-                -0.7071069478988647
+                0.7071067690849304
             ],
             "position": [
-                1.1102805137634277,
+                -1.1102805137634277,
                 0.06355486810207367,
-                -0.31288766860961914
+                0.31288766860961914
             ],
             "scale": [
                 1.0,
@@ -940,17 +1044,18 @@
     {
         "name": "ArcadeMachine9",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071065902709961,
+                -0.7071067690849304,
                 0.0,
-                -0.7071069478988647
+                0.7071067690849304
             ],
             "position": [
-                1.1102805137634277,
+                -1.1102805137634277,
                 0.06355486810207367,
-                0.4919700622558594
+                -0.4919700622558594
             ],
             "scale": [
                 1.0,
@@ -964,17 +1069,18 @@
     {
         "name": "ArcadeMachine10",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071065902709961,
+                -0.7071067690849304,
                 0.0,
-                -0.7071069478988647
+                0.7071067690849304
             ],
             "position": [
-                1.1102805137634277,
+                -1.1102805137634277,
                 0.06355486810207367,
-                1.296828269958496
+                -1.296828269958496
             ],
             "scale": [
                 1.0,
@@ -988,17 +1094,18 @@
     {
         "name": "ArcadeMachine11",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071065902709961,
+                -0.7071067690849304,
                 0.0,
-                -0.7071069478988647
+                0.7071067690849304
             ],
             "position": [
-                1.1102805137634277,
+                -1.1102805137634277,
                 0.06355486810207367,
-                2.1016855239868164
+                -2.1016855239868164
             ],
             "scale": [
                 1.0,
@@ -1012,17 +1119,18 @@
     {
         "name": "ArcadeMachine5",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                -3.950782299041748,
+                3.950782299041748,
                 0.06355486810207367,
-                2.1016855239868164
+                -2.1016855239868164
             ],
             "scale": [
                 1.0,
@@ -1036,17 +1144,18 @@
     {
         "name": "ArcadeMachine4",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                -3.950782299041748,
+                3.950782299041748,
                 0.06355486810207367,
-                1.296828269958496
+                -1.296828269958496
             ],
             "scale": [
                 1.0,
@@ -1060,17 +1169,18 @@
     {
         "name": "ArcadeMachine3",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                -3.950782299041748,
+                3.950782299041748,
                 0.06355486810207367,
-                0.4919700622558594
+                -0.4919700622558594
             ],
             "scale": [
                 1.0,
@@ -1084,17 +1194,18 @@
     {
         "name": "ArcadeMachine2",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                -3.950782299041748,
+                3.950782299041748,
                 0.06355486810207367,
-                -0.31288766860961914
+                0.31288766860961914
             ],
             "scale": [
                 1.0,
@@ -1108,17 +1219,18 @@
     {
         "name": "ArcadeMachine1",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                -3.950782299041748,
+                3.950782299041748,
                 0.06355486810207367,
-                -1.1177453994750977
+                1.1177453994750977
             ],
             "scale": [
                 1.0,
@@ -1132,17 +1244,18 @@
     {
         "name": "airhockey-combined",
         "properties": {
+            "collider.collada": "/media/vrcade/models/airhockey/airhockey-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071064710617065,
+                -0.7071070671081543,
                 0.0,
-                0.7071071267127991
+                0.7071064710617065
             ],
             "position": [
-                5.896145820617676,
+                -5.896145820617676,
                 0.06506164371967316,
-                0.784419059753418
+                -0.784419059753418
             ],
             "render.collada": "/media/vrcade/models/airhockey/airhockey.dae",
             "scale": [
@@ -1157,17 +1270,18 @@
     {
         "name": "change-machine-high",
         "properties": {
+            "collider.collada": "/media/vrcade/models/change-machine/change-machine-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -1.0,
                 0.0,
-                -4.371138828673793e-08
+                0.0,
+                1.0
             ],
             "position": [
-                1.5071823596954346,
+                -1.5071823596954346,
                 0.06506164371967316,
-                -2.512315273284912
+                2.512315273284912
             ],
             "render.collada": "/media/vrcade/models/change-machine/change-machine.dae",
             "scale": [
@@ -1182,17 +1296,18 @@
     {
         "name": "ArcadeMachine0",
         "properties": {
+            "collider.collada": "/media/vrcade/models/cabinet/cabinet-collider.dae",
             "mass": 1.0,
             "orientation": [
                 0.0,
-                -0.7071068286895752,
+                0.7071067690849304,
                 0.0,
-                0.7071067094802856
+                0.7071067690849304
             ],
             "position": [
-                -3.950782299041748,
+                3.950782299041748,
                 0.06355486810207367,
-                -1.9226031303405762
+                1.9226031303405762
             ],
             "scale": [
                 1.0,
@@ -1202,5 +1317,30 @@
             "type": "arcademachine"
         },
         "type": "arcademachine"
+    },
+    {
+        "name": "metacade-sign",
+        "properties": {
+            "mass": 1.0,
+            "orientation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "position": [
+                2.966013193130493,
+                4.797733783721924,
+                8.86685562133789
+            ],
+            "render.collada": "/media/vrcade/models/flynns-v5/flynns-sign.dae",
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "type": "generic"
+        },
+        "type": "generic"
     }
 ]
